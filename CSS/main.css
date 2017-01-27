@@ -268,6 +268,10 @@ label[for="toggleNav"] {
   padding: 5px;
   cursor: pointer;
   width: 100vw; }
+  @media only screen and (min-width: 600px) {
+    label[for="toggleNav"] {
+      display: none;
+      width: none; } }
 
 #toggleNav:checked ~ main label[for="toggleNav"] #enterNav {
   display: none; }
@@ -281,6 +285,10 @@ label[for="toggleNav"] {
   transform: translateX(40vw);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
+  @media only screen and (min-width: 600px) {
+    #toggleNav:checked ~ main {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
 
 #toggleNav:checked ~ #mobileNav {
   width: 40vw;
@@ -293,9 +301,6 @@ label[for="toggleNav"] {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
-/* ========== */
-/* MOBILE NAV */
-/* ========== */
 #mobileNav {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -314,6 +319,10 @@ label[for="toggleNav"] {
   flex-direction: column;
   overflow: hidden;
   display: inline-block; }
+  @media only screen and (min-width: 600px) {
+    #mobileNav {
+      display: none;
+      width: 0; } }
 
 .mobileNav_name {
   padding: 10px;
@@ -366,7 +375,6 @@ label[for="toggleNav"] {
   align-self: bottom; }
 
 #standardNav {
-  /* NAV BAR FLEX SETTINGS */
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -381,6 +389,11 @@ label[for="toggleNav"] {
   align-items: baseline;
   background-color: white;
   padding: 10px; }
+  @media only screen and (min-width: 600px) {
+    #standardNav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .nav_name {
   font-family: 'Architects Daughter', cursive;
@@ -439,6 +452,9 @@ main > section {
   color: snow;
   z-index: 5;
   background-color: black; }
+  @media only screen and (min-width: 600px) {
+    .about_bars_intro {
+      width: 50vw; } }
 
 .about_bars_bar {
   width: 10px;
@@ -456,6 +472,12 @@ main > section {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
+  @media only screen and (min-width: 600px) {
+    .projects_carousel {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .projects_carousel_tabs {
   list-style: none;
@@ -466,6 +488,12 @@ main > section {
   -ms-flex-order: 1;
   order: 1;
   display: none; }
+  @media only screen and (min-width: 600px) {
+    .projects_carousel_tabs {
+      display: block;
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; } }
 
 .projects_carousel_tabs li {
   padding: 3px;
@@ -669,40 +697,6 @@ footer {
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.9s; }
 
-@media only screen and (min-width: 600px) {
-  label[for="toggleNav"] {
-    display: none;
-    width: none; }
-
-  .projects_carousel_tabs {
-    display: block; }
-
-  #toggleNav:checked ~ main {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-
-  #standardNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-
-  #mobileNav {
-    display: none;
-    width: 0; }
-
-  .about_bars_intro {
-    width: 50vw; }
-
-  .projects_carousel {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-
-  .projects_carousel_tabs {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0; } }
 .bCardInput {
   display: none; }
 

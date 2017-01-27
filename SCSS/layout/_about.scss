@@ -1,3 +1,5 @@
+//MAKE BARS A COMPONENT -> ABOUT BARS/ ABOUT BARS SHOULD BE RENAMED
+
 .about_bars{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +18,10 @@
   width: 95vw;
   color: snow;
   z-index: 5;
-  background-color: black;;
+  background-color: black;
+  @media only screen and (min-width: 600px) {
+    width: 50vw;
+  }
 }
 
 

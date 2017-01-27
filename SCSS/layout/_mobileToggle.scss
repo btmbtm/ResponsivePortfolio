@@ -1,5 +1,6 @@
 #toggleNav {
   display: none;
+
 }
 
 label[for="toggleNav"]{  
@@ -9,6 +10,10 @@ label[for="toggleNav"]{
   padding: 5px;
   cursor: pointer;
   width: 100vw;
+  @media only screen and (min-width: 600px) {
+    display: none;
+    width: none;
+  }
 }
 
 
@@ -27,6 +32,10 @@ label[for="toggleNav"]{
           transform: translateX(40vw);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
+  @media only screen and (min-width: 600px) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 
 }
 
