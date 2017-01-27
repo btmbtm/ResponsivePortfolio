@@ -1,0 +1,9 @@
+main{
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+main > section{
+  display: none;
+  padding: 10px 5px;
+}

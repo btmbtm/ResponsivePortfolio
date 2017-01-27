@@ -1,0 +1,197 @@
+
+input[name="projectSwitches"]{
+  display:none;
+}
+
+input[name="projectSwitches"]:nth-child(1):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(1), 
+input[name="projectSwitches"]:nth-child(2):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(2), 
+input[name="projectSwitches"]:nth-child(3):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(3), 
+input[name="projectSwitches"]:nth-child(4):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(4),
+input[name="projectSwitches"]:nth-child(5):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(5){
+  background-color: rgba(50,50,50, 0.7);
+  color: white;
+}
+
+input[name="projectSwitches"]:nth-child(1):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(1),
+input[name="projectSwitches"]:nth-child(2):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(2),
+input[name="projectSwitches"]:nth-child(3):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(3),
+input[name="projectSwitches"]:nth-child(4):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(4),
+input[name="projectSwitches"]:nth-child(5):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(5)
+{
+  display: block
+}
+
+.projects_carousel{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: column; 
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.projects_carousel_tabs{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  min-width: 20%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: none;
+}
+
+.projects_carousel_tabs li{
+  padding: 3px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.projects_carousel_tabs li label{
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.project_carousel_display{
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+
+.project_carousel_display_item{
+  display: none;
+}
+
+.project_carousel_display_carousel_images{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sliderRight, .sliderLeft{
+  width: 10%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-align: stretch; 
+      -ms-flex-align: stretch; 
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.carousel_navArrow:hover{
+  background-color: gray;
+  color: white;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.carousel_navArrow{
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.carousel_navArrow:hover{
+  background-color: gray;
+  color: white;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.project_carousel_switch_container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.project_carousel_display_carousel_images img{
+  width: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  max-width: 80%;
+  -webkit-transform: scale(0,0);
+          transform: scale(0,0);
+  -webkit-transition: width all 0.2s ease-out;
+  transition: width all 0.2s ease-out;
+  
+}
+
+
+input[name|="project_carousel_switch"]{
+  display: none;
+}
+label[for|="project_carousel_switch"]{
+  cursor: pointer;
+  margin: 5px;
+}
+label[for|="project_carousel_switch"]:hover{
+  background-color: gray;
+  color: white;
+
+}
+.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(3), .project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(1), input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(2){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(2), .project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(3), input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(1){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images img:nth-of-type(1),.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images img:nth-of-type(2), .project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images img:nth-of-type(3){
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: 0;
+  width: auto;
+  height: auto;
+  -webkit-transform: scale(1,1);
+          transform: scale(1,1);
+  -webkit-transition: all 0.8s ;
+  transition: all 0.8s ;
+}
+
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_switch_container label:nth-of-type(1),
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_switch_container label:nth-of-type(2),
+input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_switch_container label:nth-of-type(3){
+  background-color: gray;
+  color: white;
+}
+

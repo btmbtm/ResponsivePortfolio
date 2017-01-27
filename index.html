@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+<script src="https://use.fontawesome.com/0b12db3902.js"></script>
+</head>
+<body>
+  
+
+<!-- ===================== -->
+<!-- MAIN SECTION SWITCHES -->
+<!-- ===================== -->
+<input type="radio" name="sectionSwitches" id="aboutSwitch" checked/>
+<input type="radio" name="sectionSwitches" id="projectsSwitch" />
+<input type="radio" name="sectionSwitches" id="skillsSwitch"  />
+<input type="radio" name="sectionSwitches" id="contactSwitch" />
+
+<!-- MODAL TOGGLE SWITCH -->
+<input type="checkbox" id="searchModalToggle" checked/>
+
+<!-- =========== -->
+<!-- TOP NAV BAR -->
+<!-- =========== -->
+<input type="checkbox" name="toggleNav" id="toggleNav" />
+<nav id="standardNav">
+  <div class="nav_name">btmbtm</div>
+
+  <ul class="nav_links">
+    <li><label for="aboutSwitch">About</label></li>
+    <li><label for="projectsSwitch">Projects</label>
+    </li>
+    <li><label for="skillsSwitch">Skills</label></li>
+    <li><label for="contactSwitch">Contact</label></li>
+  </ul>
+  <div class="nav_search"> <input type="text" placeholder="Search" />
+    <label for="searchModalToggle">
+      <i class="fa fa-search" aria-hidden="true"> </i>
+    </label>
+  </div>
+</nav>
+<nav id="mobileNav">
+  <div class="mobileNav_name">btmbtm</div>
+  <ul class="mobileNav_links">
+    <li><label for="aboutSwitch">About</label></li>
+    <li><label for="projectsSwitch">Projects
+      </label>
+      
+      <ul class="mobileNav_projects_carousel_tabs">
+        <li><label for="calcProjectSwitch">Real Calculator</label></li>
+        <li><label for="nonJSUIComponentsSwitch">UI Componenets</label></li>
+        <li><label for="formProjectSwitch">Forms</label></li>
+        <li><label for="shoppingCartSwitch">Shopping Page</label></li>
+        <li><label for="otherProjectsSwitch">Other Projects</label></li>
+      </ul>
+    <li><label for="skillsSwitch">Skills</label></li>
+    <li><label for="contactSwitch">Contact</label></li>
+  </ul>
+  <div class="mobileNav_search">
+    <label for="mobileNav_searchInput">Search:</label>
+    <input type="text" id="mobileNav_searchInput" />
+    <label for="searchModalToggle">
+      <i class="fa fa-search" aria-hidden="true"> </i>
+    </label>
+
+  </div>
+  <footer class="mobileNav_footer">
+    <div class="mobileNav_footer_text">
+      © 2016 - btmbtm
+    </div>
+  </footer>
+</nav>
+
+
+<!-- ============= -->
+<!-- MAIN SECTIONS -->
+<!-- ============= -->
+
+<main>
+  <label for="toggleNav">
+    <i id="enterNav" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    <i id="exitNav" class="fa fa-times fa-2x" aria-hidden="true"></i>
+  </label>
+  <!-- ============= -->
+  <!-- ABOUT SECTION -->
+  <!-- ============= -->
+  <section id="About">
+    <h1>About</h1>
+    <div class="bars">
+      <div class="about_bars_intro">My names btmbtm. I'm just a simple web dev. I live in New York. I like dogs and cats. I know some stuff about HTML5/CSS3/JavaScript.</div>
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+      <div class="bar" id="bar4"></div>
+      <div class="bar" id="bar5"></div>
+      <div class="bar" id="bar6"></div>
+      <div class="bar" id="bar7"></div>
+      <div class="bar" id="bar8"></div>
+      <div class="bar" id="bar9"></div>
+    </div>
+    
+    
+  </section>
+
+  <!-- =============== -->
+  <!-- PROJECT SECTION -->
+  <!-- =============== -->
+
+
+  <section id="Projects">
+    <!-- PROJECT SWITCHES -->
+    <input type="radio" name="projectSwitches" id="calcProjectSwitch" checked/>
+    <input type="radio" name="projectSwitches" id="nonJSUIComponentsSwitch" />
+    <input type="radio" name="projectSwitches" id="formProjectSwitch" />
+    <input type="radio" name="projectSwitches" id="shoppingCartSwitch" />
+    <input type="radio" name="projectSwitches" id="otherProjectsSwitch" />
+
+    <h1>Projects</h1>
+    <div class="projects_carousel">
+
+      <ul class="projects_carousel_tabs">
+        <li><label for="calcProjectSwitch">Real Calculator</label></li>
+        <li><label for="nonJSUIComponentsSwitch">UI Componenets</label></li>
+        <li><label for="formProjectSwitch">Forms</label></li>
+        <li><label for="shoppingCartSwitch">Shopping Page</label></li>
+        <li><label for="otherProjectsSwitch">Other Projects</label></li>
+      </ul>
+
+      <section class="project_carousel_display">
+        <div class="project_carousel_display_item" id="RealCalc_Display">
+          <div class="project_carousel_display_carousel">
+
+            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1A" checked />
+            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1B" />
+            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1C" />
+
+            <div class="project_carousel_display_carousel_images">
+              <div class="sliderLeft">
+                <label for="project_carousel_switch-1A" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-1B" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-1C" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-Calc.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-calc2.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-calc3.jpg" alt="" />
+
+
+              <div class="sliderRight">
+                <label for="project_carousel_switch-1A" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-1B" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-1C" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+
+              </div>
+            </div>
+            <div class="project_carousel_switch_container">
+              <label for="project_carousel_switch-1A">1</label>
+              <label for="project_carousel_switch-1B">2</label>
+              <label for="project_carousel_switch-1C">3</label>
+            </div>
+
+
+          </div>
+          <div class="project_carousel_display_item_info">
+            <h2>Real Calculator</h2>
+            <div>
+              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p> A basic JavaScript calculator based on the original Mac OS calculator. </p>
+            </div>
+          </div>
+        </div>
+        <div class="project_carousel_display_item" id="UIComp_Display">
+          <div class="project_carousel_display_carousel">
+
+            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2A" checked />
+            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2B" />
+            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2C" />
+
+            <div class="project_carousel_display_carousel_images">
+              <div class="sliderLeft">
+                <label for="project_carousel_switch-2A" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-2B" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-2C" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-carImageCarousel.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfoli-BusinessCard.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-MenuAccordion.jpg" alt="" />
+
+
+              <div class="sliderRight">
+                <label for="project_carousel_switch-2A" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-2B" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-2C" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+
+              </div>
+            </div>
+            <div class="project_carousel_switch_container">
+              <label for="project_carousel_switch-2A">1</label>
+              <label for="project_carousel_switch-2B">2</label>
+              <label for="project_carousel_switch-2C">3</label>
+            </div>
+
+
+          </div>
+          <div class="project_carousel_display_item_info">
+            <h2>Non-JS UI Components</h2>
+            <div>
+              <h3> <span>Technologies:</span> HTML5, and CSS3 </h3>
+              <p> Dynamic UI components only using HTML5/CSS. Projects include a basic image gallery, an accordian restaurant menu, and a business card. </p>
+            </div>
+          </div>
+        </div>
+        <div class="project_carousel_display_item" id="Form_Display">
+          <div class="project_carousel_display_carousel">
+
+            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3A" checked />
+            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3B" />
+            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3C" />
+
+            <div class="project_carousel_display_carousel_images">
+              <div class="sliderLeft">
+                <label for="project_carousel_switch-3A" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-3B" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-3C" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-form-logIn.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-form-ShippingBilling.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-form-color.jpg" alt="" />
+
+
+              <div class="sliderRight">
+                <label for="project_carousel_switch-3A" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-3B" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-3C" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+
+              </div>
+            </div>
+            <div class="project_carousel_switch_container">
+              <label for="project_carousel_switch-3A">1</label>
+              <label for="project_carousel_switch-3B">2</label>
+              <label for="project_carousel_switch-3C">3</label>
+            </div>
+
+
+          </div>
+          <div class="project_carousel_display_item_info">
+            <h2>Form Components</h2>
+            <div>
+              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p> A wide variet of forms that includes custom client side form validation. Forms include a login form, a color builder, a shipping/billing form among others.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project_carousel_display_item" id="Shopping_Display">
+          <div class="project_carousel_display_carousel">
+
+            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4A" checked />
+            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4B" />
+            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4C" />
+
+            <div class="project_carousel_display_carousel_images">
+              <div class="sliderLeft">
+                <label for="project_carousel_switch-4A" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-4B" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-4C" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-store1.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-store2.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-store3.jpg" alt="" />
+
+
+              <div class="sliderRight">
+                <label for="project_carousel_switch-4A" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-4B" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-4C" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+
+              </div>
+            </div>
+            <div class="project_carousel_switch_container">
+              <label for="project_carousel_switch-4A">1</label>
+              <label for="project_carousel_switch-4B">2</label>
+              <label for="project_carousel_switch-4C">3</label>
+            </div>
+
+
+          </div>
+          <div class="project_carousel_display_item_info">
+            <h2>Form Components</h2>
+            <div>
+              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p> A basic shopping page that tracks cart contents and offers a cart modal. Client-side JavaScript is used to keep track of cart items, cart totals, applied discount codes etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project_carousel_display_item" id="Formp_Display">
+          <div class="project_carousel_display_carousel">
+
+            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5A" checked />
+            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5B" />
+            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5C" />
+
+            <div class="project_carousel_display_carousel_images">
+              <div class="sliderLeft">
+                <label for="project_carousel_switch-5A" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-5B" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-5C" class="carousel_navArrow">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </label>
+
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-form-IntroCSSWebsite.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/porfolio-fantasy.jpg" alt="" />
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-sidebar.jpg" alt="" />
+
+
+              <div class="sliderRight">
+                <label for="project_carousel_switch-5A" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-5B" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+                <label for="project_carousel_switch-5C" class="carousel_navArrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </label>
+
+              </div>
+            </div>
+            <div class="project_carousel_switch_container">
+              <label for="project_carousel_switch-5A">1</label>
+              <label for="project_carousel_switch-5B">2</label>
+              <label for="project_carousel_switch-5C">3</label>
+            </div>
+
+
+          </div>
+          <div class="project_carousel_display_item_info">
+            <h2>Other Projects</h2>
+            <div>
+              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p> A bunch of basic web page projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============== -->
+  <!-- SKILLS SECTION -->
+  <!-- ============== -->
+  <section id="Skills">
+    <h1>Skills</h1>
+    <div class="skillCharts_container">
+      <div class="skillChart_container">
+        <div class="skillChart_title">Front End Dev</div>
+        <div class="skillChart">
+          <div class="skillsChart_proficiencyLevel">
+            <div class="skillsChart_proficiencyLevel_level">Expert</div>
+            <div class="skillsChart_proficiencyLevel_level">Proficient</div>
+            <div class="skillsChart_proficiencyLevel_level">Competent</div>
+            <div class="skillsChart_proficiencyLevel_level">Learning</div>
+            <div class="skillsChart_proficiencyLevel_level-hidden">HOLDER</div>
+          </div>
+          <div class="skillsChart_barsContainer">
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont "> <div class="skillsChart_bar_toolTip">Have a strong handle on HTML and CSS</div></div>
+              <div class="skillsChart_bar skillsChart_bar-proficient skillsChart_bar-yellow"></div>
+              <div class="skillsChart_barLabel ">HTML5/CSS3</div>
+            </div>
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Have a solid grasp of JS basics</div></div>
+              <div class="skillsChart_bar  skillsChart_bar-competent skillsChart_bar-aqua"></div>
+              <div class="skillsChart_barLabel">JavaScript</div>
+            </div>
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Have a solid grasp of pure CSS animation and GSAP</div></div>
+              <div class="skillsChart_bar skillsChart_bar-competent skillsChart_bar-pink"></div>
+              <div class="skillsChart_barLabel ">Web&nbsp;Animation</div>
+            </div>
+
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Have a solid grasp of Sublime Text/GIT/CLI</div></div>
+              <div class="skillsChart_bar skillsChart_bar-competent skillsChart_bar-green"></div>
+              <div class="skillsChart_barLabel">Workflow&nbsp;Tools</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="skillChart_container">
+        <div class="skillChart_title">Back End Dev</div>
+        <div class="skillChart">
+          <div class="skillsChart_proficiencyLevel">
+            <div class="skillsChart_proficiencyLevel_level">Expert</div>
+            <div class="skillsChart_proficiencyLevel_level">Proficient</div>
+            <div class="skillsChart_proficiencyLevel_level">Competent</div>
+            <div class="skillsChart_proficiencyLevel_level">Learning</div>
+            <div class="skillsChart_proficiencyLevel_level-hidden">HOLDER</div>
+          </div>
+          <div class="skillsChart_barsContainer">
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Just startin' learnin' the basics</div></div>
+              <div class="skillsChart_bar skillsChart_bar-learning skillsChart_bar-yellow"></div>
+              <div class="skillsChart_barLabel ">HTML5/CSS3</div>
+            </div>
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Just startin' learnin' the basics</div></div>
+              <div class="skillsChart_bar  skillsChart_bar-learning skillsChart_bar-aqua"></div>
+              <div class="skillsChart_barLabel">JavaScript</div>
+            </div>
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Just startin' learnin' the basics</div></div>
+              <div class="skillsChart_bar skillsChart_bar-learning skillsChart_bar-green"></div>
+              <div class="skillsChart_barLabel ">Web&nbsp;Animation</div>
+            </div>
+
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Just startin' learnin' the basics</div></div>
+              <div class="skillsChart_bar skillsChart_bar-learning skillsChart_bar-pink" ></div>
+              <div class="skillsChart_barLabel" >Workflow&nbsp;Tools</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="skillChart_container">
+        <div class="skillChart_title">Other Skills</div>
+        <div class="skillChart">
+          <div class="skillsChart_proficiencyLevel">
+            <div class="skillsChart_proficiencyLevel_level">Expert</div>
+            <div class="skillsChart_proficiencyLevel_level">Proficient</div>
+            <div class="skillsChart_proficiencyLevel_level">Competent</div>
+
+            <div class="skillsChart_proficiencyLevel_level">Learning</div>
+            <div class="skillsChart_proficiencyLevel_level-hidden">HOLDER</div>
+          </div>
+          <div class="skillsChart_barsContainer">
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Workin' on this now</div></div>
+              <div class="skillsChart_bar skillsChart_bar-learning  skillsChart_bar-yellow"></div>
+            
+              
+              <div class="skillsChart_barLabel ">Written&nbsp;Communication</div>
+            </div>
+            
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Can tackle novel problems without fear</div></div>
+              <div class="skillsChart_bar  skillsChart_bar-expert"></div>
+              <div class="skillsChart_barLabel">Problem&nbsp;Solving</div>
+            </div>
+            
+            
+            <div class="skillsChart_barContainer">
+               <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip"><span style="font-size: 2em;">囧</span></div></div>
+              <div class="skillsChart_bar skillsChart_bar-competent skillsChart_bar-green"></div>
+
+              <div class="skillsChart_barLabel ">Project&nbsp;Mangement</div>
+            </div>
+            
+
+            <div class="skillsChart_barContainer">
+              <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Can find anything about anything</div></div>
+              <div class="skillsChart_bar skillsChart_bar-expert skillsChart_bar-aqua"></div>
+              
+              
+              <div class="skillsChart_barLabel">Research</div>
+            </div>
+            
+            
+            <div class="skillsChart_barContainer">
+              <div class="skillsChart_bar_toolTipCont"> <div class="skillsChart_bar_toolTip">Still a novice, need more practice</div></div>
+              <div class="skillsChart_bar skillsChart_bar-learning skillsChart_bar-pink"></div>
+              <div class="skillsChart_barLabel">Public&nbsp;Speaking</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ -->
+  <!-- CONTACT SECTIONS -->
+  <!-- ================ -->
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <input class="bCardInput" id="bcardFlipCheck" type="checkbox" />
+<div class="holder" >
+  
+  <div class="card">
+    <div class="bcard_front">
+      <label for="bcardFlipCheck" class="flipIcon"><i class="fa fa-repeat  fa-2x" aria-hidden="true"></i></label>
+        <div>
+          
+          <h2 id="name">Brian Merriman</h2>
+          <h3 id="nameSub"> Modern Dev Student </h3>
+      </div>
+        
+        <p>
+          Brian is currently a student at Modern Developer studying  full stack development. He likes codin' purty stuff.
+        </p>
+        <ul id="basicWebInfo"> 
+          <li>merriman.bt@gmail.com</li>
+          <li>btmbtm.github.io/</li>
+        </ul>
+      <div id="networkLinks">  
+        <div class="networkLink"><a href="google.com">
+          <img id="ency" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/enc1.png" alt="" /></a>
+          <figcaption>Brian Merriman <br /> <span class="purpleText">on Encyclopedia.MD </span> </figcaption>
+        </div>
+        
+      
+       <div class="networkLink"><a href="https://github.com/btmbtm">          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/github1.png" alt="" /></a></div>
+      </div>
+        
+    </div>
+    <div class="bcard_back">      
+      <label for="bcardFlipCheck" class="flipIcon"><i class="fa fa-undo  fa-2x" aria-hidden="true"></i></label>
+      <div id="highlightedName">
+        Brian Merriman
+      </div>
+     </div>
+  </div>
+</div>
+  </section>
+</main>
+
+<!-- ====== -->
+<!-- FOOTER -->
+<!-- ====== -->
+
+<footer>
+  © 2016 btmbtm All Rights Reserved.
+</footer>
+
+<!-- ============ -->
+<!-- SEARCH MODAL -->
+<!-- ============ -->
+
+<div id="SearchModal">
+  <label class="searchModal_exitButton" for="searchModalToggle">
+    <i id="exitModal" class="fa fa-times fa-2x" aria-hidden="true"></i>
+  </label>
+  <div class="searchModal_results">
+    <h1>SEARCH TEMPORARILY DISABLED</h1>
+
+  </div>
+</div>
+
+<div class="modalBackground">
+
+</div>
+</body>
+</html>

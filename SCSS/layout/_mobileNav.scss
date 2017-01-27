@@ -1,0 +1,83 @@
+/* ========== */
+/* MOBILE NAV */
+/* ========== */
+
+#mobileNav{
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+  width: 0;
+  border-right: 2px solid black;
+  position: fixed;
+  height: 95vh;
+  left: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.mobileNav_name{
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.mobileNav_links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobileNav_links li{
+  padding: 10px;
+}
+
+.mobileNav_links li label{
+  display: block;
+
+}
+
+.mobileNav_links li:hover label{
+  color: blue;
+  font-weight: boldest;
+  cursor: pointer;
+}
+
+
+.mobileNav_search{
+  padding: 10px;
+}
+
+.mobileNav_search #mobileNav_searchInput{
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.mobileNav_footer{
+  padding: 10px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mobileNav_footer_text{
+  font-size: 0.7em;
+  -ms-flex-item-align: bottom;
+      -ms-grid-row-align: bottom;
+      align-self: bottom;
+}

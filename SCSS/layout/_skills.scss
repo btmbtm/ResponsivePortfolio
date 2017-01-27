@@ -1,0 +1,154 @@
+.skillCharts_container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skillChart{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 4vh 3vh 15vh 0vh;
+}
+.skillChart_title{
+  margin: 20px;
+  text-align: center;
+}
+.skillsChart_proficiencyLevel{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;;
+  font-size: 0.9em;
+  border-bottom: 2px solid black;
+}
+
+.skillsChart_proficiencyLevel_level{
+  position: relative;
+  top: -5px;
+  font-size: 0.8em;
+}
+.skillsChart_proficiencyLevel_level-hidden{
+  visibility:hidden;
+}
+
+.skillsChart_barsContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 40vh;
+  max-height: 185px;
+  border-bottom: 2px solid black;
+}
+.skillsChart_barContainer{
+  margin: -9px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  position: relative;
+}
+
+.skillsChart_barLabel{
+  height: 0;
+  width: 0;
+  text-align: center;
+   padding: 5px 13px; 
+  -webkit-transform: rotate(45deg); 
+          transform: rotate(45deg);
+  font-size: 0.8em;
+  z-index: -1;
+}
+
+.skillsChart_bar{
+  width: 25px;
+  background-color: orange;
+  cursor: pointer;
+}
+.skillsChart_barContainer:hover .skillsChart_bar_toolTipCont > .skillsChart_bar_toolTip{
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: 5;
+}
+
+.skillsChart_bar_toolTipCont{
+  height: 0;
+  width: 0;
+  position: relative;
+}
+
+.skillsChart_bar_toolTip{
+  position: absolute;
+  top: -35px;
+  left: -110px;
+  width: 120px;
+  border-radius: 10px 10px 0 10px;
+  background-color: rgba(55,55,55,0.8);
+  color: white;
+  padding: 7px;
+  font-size: 0.5em;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  z-index: -5;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.skillsChart_bar-expert{
+  height: 40vh;
+  max-height: 180px;
+}
+
+.skillsChart_bar-proficient{
+  height: 30vh;
+  max-height: 138.75px;
+}
+
+.skillsChart_bar-learning{
+  height: 0vh;
+}
+
+.skillsChart_bar-competent{
+  height: 20vh;
+  max-height: 95px;
+}
+
+.skillsChart_bar-learning{
+  height: 14vh;
+  max-height: 55px;
+}
+
+.skillsChart_bar-orange{
+  color: #FFAD41;
+}
+
+.skillsChart_bar-aqua{
+  background-color: #38BAF0;
+}
+
+.skillsChart_bar-green{
+  background-color: #69D12B;
+}
+.skillsChart_bar-pink{
+  background-color: #FA8CB0;
+}
+.skillsChart_bar-yellow{
+  background-color: #EFE210;
+}

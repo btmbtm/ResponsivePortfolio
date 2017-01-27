@@ -1,0 +1,13 @@
+@mixin clear-List{
+	list-style: none;
+	padding: 0;
+}
+
+@mixin clear-Link{
+	text-decoration: none;
+	color: black;
+}
+
+@mixin animationEase-EaseInOutBack{
+	animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+}

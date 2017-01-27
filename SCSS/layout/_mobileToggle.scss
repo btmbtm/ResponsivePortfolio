@@ -1,0 +1,44 @@
+#toggleNav {
+  display: none;
+}
+
+label[for="toggleNav"]{  
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 100vw;
+}
+
+
+
+#toggleNav:checked ~ main label[for="toggleNav"] #enterNav{
+  display: none;
+}
+
+#toggleNav:not(:checked) ~ main label[for="toggleNav"] #exitNav{
+  display: none;
+}
+
+#toggleNav:checked ~ main{
+  position: relative;
+  -webkit-transform: translateX(40vw);
+          transform: translateX(40vw);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+
+}
+
+#toggleNav:checked ~ #mobileNav{
+  width: 40vw;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: inherit;
+}
+
+#toggleNav:not(:checked) ~ #mobileNav{
+  width: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}

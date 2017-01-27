@@ -1,0 +1,48 @@
+
+.swatches{
+  width: 600px; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  -ms-flex-flow: row wrap; 
+      flex-flow: row wrap;
+  margin: 0 auto;
+  
+}
+
+.swatch{
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+  margin: 3px;
+  background: -webkit-linear-gradient(315deg, blue, lightblue);
+  background: linear-gradient(135deg, blue, lightblue);
+}
+
+.bars{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  min-height: 85vh;
+}
+
+.about_bars_intro{
+  position: absolute;
+  top: 30vh;
+  width: 95vw;
+  color: snow;
+  z-index: 5;
+  background-color: black;;
+}
+
+
+.bar{
+  width: 10px;
+  background-color: black;
+  margin: 10px 10px;
+}
