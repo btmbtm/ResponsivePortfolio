@@ -83,3 +83,31 @@
       -ms-grid-row-align: bottom;
       align-self: bottom;
 }
+
+.mobileNav_projects_carousel_tabs{
+  height: 0;
+  opacity:0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  overflow: hidden;
+  color: black;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+
+.mobileNav_projects_carousel_tabs > li > label{
+  color: black !important;
+}
+
+input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav_links > li:nth-child(2)  .mobileNav_projects_carousel_tabs{
+  height: 100%;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+
+input[name='mobile_projectsSwitch']{
+  height: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}

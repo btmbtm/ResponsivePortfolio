@@ -2,6 +2,7 @@ main{
   position: relative;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  
   @media only screen and (min-width: 600px) {
       min-height: 80vh;
   }
