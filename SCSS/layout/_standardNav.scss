@@ -1,23 +1,26 @@
 
 #standardNav{
   display: none;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
               -ms-grid-row-align: baseline;
           align-items: baseline;
+
   background-color: white;
   padding: 10px;  
+
   @media only screen and (min-width: 600px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flexBox;
   }
 }
 
@@ -27,12 +30,10 @@
 }
 
 .nav_links{
-  //flex minxin
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row;
-      flex-flow: row;
+  @include flexBox;
+
+  -ms-flex-flow: row ;
+      flex-flow: row wrap;
   // clear 
   list-style: none;
   margin: 0;

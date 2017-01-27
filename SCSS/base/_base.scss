@@ -3,16 +3,24 @@
 }
 body{
   font-family: 'Roboto Mono', monospace;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: lightyellow;
   @media only screen and (min-width: 360px) {
 		background-color: lightpink;
+    width: 100vw;
   }
   @media only screen and (min-width: 600px) {
 	    background-color: lightgreen;
 	    display: block;
 	    font-size: 1.1em;
+      width: 97vw;
   }
   @media only screen and (min-width: 1024px) {
         background-color: lightblue;
       	font-size: 1.5em;
+        width: 90vw;
+          max-width: 1600px;
+
   }
 }

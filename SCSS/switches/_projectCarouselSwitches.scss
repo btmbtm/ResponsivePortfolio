@@ -4,46 +4,48 @@ input[name|="project_carousel_switch"]{
 label[for|="project_carousel_switch"]{
   cursor: pointer;
   margin: 5px;
-}
-label[for|="project_carousel_switch"]:hover{
-  background-color: gray;
-  color: white;
-
-}
-.project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(3), .project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(1), input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(2){
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  &:hover{
+    background-color: gray;
+    color: white;
+  }
 }
 
+
 .project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(2), .project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(3), input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(1){
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(3), 
+.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(1), 
+input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderLeft .carousel_navArrow:nth-of-type(2)
+{
+  @include flexBox;
 }
 
 .project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images img:nth-of-type(1),.project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images img:nth-of-type(2), .project_carousel_display_carousel
-input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images img:nth-of-type(3){
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 0;
-  width: auto;
-  height: auto;
-  -webkit-transform: scale(1,1);
-          transform: scale(1,1);
-  -webkit-transition: all 0.8s ;
-  transition: all 0.8s ;
+input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(2), 
+.project_carousel_display_carousel
+input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(3), 
+input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_display_carousel_images .sliderRight .carousel_navArrow:nth-of-type(1){
+  @include flexBox;
 }
 
-input[name|="project_carousel_switch"]:nth-of-type(1):checked ~ .project_carousel_switch_container label:nth-of-type(1),
-input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carousel_switch_container label:nth-of-type(2),
-input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_switch_container label:nth-of-type(3){
-  background-color: gray;
-  color: white;
+@for $i from 1 through 3 {
+.project_carousel_display_carousel
+  input[name|="project_carousel_switch"]:nth-of-type(#{$i}):checked ~ .project_carousel_display_carousel_images img:nth-of-type(#{$i}){
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    z-index: 0;
+    width: auto;
+    height: auto;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+    -webkit-transition: all 0.8s ;
+    transition: all 0.8s ;
+  }
+}
+
+@for $i from 1 through 3 {
+  input[name|="project_carousel_switch"]:nth-of-type(#{$i}):checked ~ .project_carousel_switch_container label:nth-of-type(#{$i}){
+    background-color: gray;
+    color: white;
+  }
 }

@@ -1,24 +1,32 @@
 //MAKE BARS A COMPONENT -> ABOUT BARS/ ABOUT BARS SHOULD BE RENAMED
 
 .about_bars{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+
+  @include flexBox;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
-  min-height: 85vh;
+
+  min-height: 75vh;
+
 }
 
 .about_bars_intro{
   position: absolute;
+  
   top: 30vh;
+
   width: 95vw;
+
   color: snow;
-  z-index: 5;
   background-color: black;
+
+  z-index: 5;
+  
+
   @media only screen and (min-width: 600px) {
     width: 50vw;
   }

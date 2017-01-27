@@ -1,24 +1,23 @@
 @import 'abstracts/_variables';
 @import 'abstracts/_mixins';
 @import 'abstracts/_transitionFunctions';
+
 @import 'base/_base';
+@import 'components/_transition';
 
 @import 'components/_aboutBarsIntro';
 @import 'components/_businessCard';
 @import 'components/_modalBackground';
+@import 'components/_projectsCarousel';
 @import 'components/_searchModal';
 @import 'components/_skills';
-@import 'components/_transition';
 
 @import 'layout/_mobileNav';
 @import 'layout/_standardNav';
 @import 'layout/_main';
-@import 'layout/_projects';
 @import 'layout/_footer';
 
 @import 'switches/_mainSwitches';
-@import 'switches/_mobileToggle';
 @import 'switches/_projectSwitches';
 @import 'switches/_projectCarouselSwitches';
-@import 'switches/_searchModalToggle';
 

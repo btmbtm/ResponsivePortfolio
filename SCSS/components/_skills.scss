@@ -1,7 +1,8 @@
+//add proficiency bar colors vars
+
 .skillCharts_container{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexBox;
+
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   -ms-flex-pack: distribute;
@@ -9,30 +10,33 @@
 }
 
 .skillChart{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexBox;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+
   margin: 4vh 3vh 15vh 0vh;
 }
+
 .skillChart_title{
   margin: 20px;
   text-align: center;
 }
+
 .skillsChart_proficiencyLevel{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexBox;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;;
+          justify-content: space-between;
+
   font-size: 0.9em;
   border-bottom: 2px solid black;
 }
@@ -42,14 +46,13 @@
   top: -5px;
   font-size: 0.8em;
 }
+
 .skillsChart_proficiencyLevel_level-hidden{
   visibility:hidden;
 }
 
 .skillsChart_barsContainer{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexBox;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -57,11 +60,10 @@
   max-height: 185px;
   border-bottom: 2px solid black;
 }
+
 .skillsChart_barContainer{
   margin: -9px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexBox;
   -ms-flex-flow: column;
       flex-flow: column;
   position: relative;
@@ -80,9 +82,9 @@
 
 .skillsChart_bar{
   width: 25px;
-  background-color: orange;
   cursor: pointer;
 }
+
 .skillsChart_barContainer:hover .skillsChart_bar_toolTipCont > .skillsChart_bar_toolTip{
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -105,9 +107,12 @@
   color: white;
   padding: 7px;
   font-size: 0.5em;
+
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+
   z-index: -5;
+
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
@@ -122,6 +127,7 @@
 }
 
 .skillsChart_bar-learning{
+  position: relative;
   height: 0vh;
 }
 
@@ -136,7 +142,7 @@
 }
 
 .skillsChart_bar-orange{
-  color: #FFAD41;
+  background-color: #FFAD41;
 }
 
 .skillsChart_bar-aqua{

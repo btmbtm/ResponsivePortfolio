@@ -1,22 +1,28 @@
 
 #mobileNav{
+
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
+
   width: 0;
+
   border-right: 2px solid black;
   position: fixed;
   height: 95vh;
   left: 0;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+  @include flexBox;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
   overflow: hidden;
+
   display: inline-block;
+
   @media only screen and (min-width: 600px) {
     display: none;
     width: 0;
@@ -31,9 +37,7 @@
 }
 
 .mobileNav_links{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include clear-List;
 }
 .mobileNav_links li{
   padding: 10px;
@@ -62,16 +66,18 @@
 
 .mobileNav_footer{
   padding: 10px;
+  
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  
+  @include flexBox;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -86,10 +92,14 @@
 
 .mobileNav_projects_carousel_tabs{
   height: 0;
+
   opacity:0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  
   overflow: hidden;
+  
   color: black;
+  
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
 }
@@ -108,6 +118,63 @@ input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav_links > li:n
 
 input[name='mobile_projectsSwitch']{
   height: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+
+#toggleNav {
+  display: none;
+
+}
+
+label[for="toggleNav"]{  
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 100vw;
+  @media only screen and (min-width: 600px) {
+    display: none;
+    width: none;
+  }
+}
+
+
+
+#toggleNav:checked ~ main label[for="toggleNav"] #enterNav{
+  display: none;
+}
+
+#toggleNav:not(:checked) ~ main label[for="toggleNav"] #exitNav{
+  display: none;
+}
+
+#toggleNav:checked ~ main{
+  position: relative;
+  -webkit-transform: translateX(40vw);
+          transform: translateX(40vw);
+
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+
+  @media only screen and (min-width: 600px) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+}
+
+#toggleNav:checked ~ #mobileNav{
+  width: 40vw;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: inherit;
+}
+
+#toggleNav:not(:checked) ~ #mobileNav{
+  width: 0;
+  
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
 }

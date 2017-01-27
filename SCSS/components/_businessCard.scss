@@ -3,7 +3,6 @@
   display: none;
 }
 
-
 .bcard_holder{
   display: block;
   width: 500px;
@@ -68,8 +67,10 @@ label.bcard_flipIcon i.fa-2x{
   height: 100%;
   -webkit-transition: box-shadow 1s ease, -webkit-transform 0.8s ease;
   transition: box-shadow 1s ease, -webkit-transform 0.8s ease;
+
   transition: transform 0.8s ease, box-shadow 1s ease;
-  transition: transform 0.8s ease, box-shadow 1s ease, -webkit-transform 0.8s ease;;
+  transition: transform 0.8s ease, box-shadow 1s ease, -webkit-transform 0.8s ease;
+
   -webkit-backface-visibility: hidden;;
           backface-visibility: hidden;
 }
@@ -95,9 +96,7 @@ label.bcard_flipIcon i.fa-2x{
 }
 
 #bcard_basicWebInfo{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include clear-List;
 }
 
 #bcard_basicWebInfo li{
@@ -109,6 +108,7 @@ label.bcard_flipIcon i.fa-2x{
 
 #bcard_basicWebInfo li:not(:first-child){
   padding-left: 10px;
+
   @media only screen and (max-width: 360px) {
     padding: 0;
   }
@@ -121,6 +121,7 @@ label.bcard_flipIcon i.fa-2x{
 
 #bcard_networkLinks img{
   width: 50px;
+
   @media only screen and (max-width: 360px) {
     width: 35px;
   }
@@ -146,8 +147,10 @@ label.bcard_flipIcon i.fa-2x{
 .bcard_back{
   background-color: black;
   color: white;
+
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
+
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/DSCN7219.jpg");
   background-size:     cover;           
 }
