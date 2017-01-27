@@ -73,6 +73,18 @@
 
 body {
   font-family: 'Roboto Mono', monospace; }
+  @media only screen and (min-width: 360px) {
+    body {
+      background-color: lightpink; } }
+  @media only screen and (min-width: 600px) {
+    body {
+      background-color: lightgreen;
+      display: block;
+      font-size: 1.1em; } }
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color: lightblue;
+      font-size: 1.5em; } }
 
 .skillCharts_container {
   display: -webkit-box;
@@ -406,7 +418,7 @@ main > section {
   display: none;
   padding: 10px 5px; }
 
-.bars {
+.about_bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +437,7 @@ main > section {
   z-index: 5;
   background-color: black; }
 
-.bar {
+.about_bars_bar {
   width: 10px;
   background-color: black;
   margin: 10px 10px; }
@@ -714,15 +726,7 @@ footer {
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.9s; }
 
-@media only screen and (min-width: 360px) {
-  body {
-    background-color: lightpink; } }
 @media only screen and (min-width: 600px) {
-  body {
-    background-color: lightgreen;
-    display: block;
-    font-size: 1.1em; }
-
   main {
     min-height: 80vh; }
 
@@ -762,10 +766,6 @@ footer {
 
   footer {
     display: block; } }
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: lightblue;
-    font-size: 1.5em; } }
 .bCardInput {
   display: none; }
 

@@ -1,26 +1,13 @@
-
-@media only screen and (min-width: 360px) {
-    body {
-        background-color: lightpink;
-        
-    }
-  
-}
-
-
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightgreen;
-      display: block;
-      font-size: 1.1em;
-    }
+
   main{
       min-height: 80vh;
   }
-    label[for="toggleNav"]{
-      display: none;
-      width: none;
-    }
+
+  label[for="toggleNav"]{
+    display: none;
+    width: none;
+  }
   
   .projects_carousel_tabs{
     display: block;
@@ -31,19 +18,21 @@
             transform: translateX(0);
   }
   
-    #standardNav{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
+  #standardNav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   
   #mobileNav{
     display: none;
     width: 0;
   }
+
   .about_bars_intro{
     width: 50vw;
   }
+
   .projects_carousel{
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -59,11 +48,4 @@
   footer{
     display: block;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-    body {
-        background-color: lightblue;
-      font-size: 1.5em;
-    }
 }

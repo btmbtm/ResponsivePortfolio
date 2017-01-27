@@ -3,4 +3,16 @@
 }
 body{
   font-family: 'Roboto Mono', monospace;
+  @media only screen and (min-width: 360px) {
+		background-color: lightpink;
+  }
+  @media only screen and (min-width: 600px) {
+	    background-color: lightgreen;
+	    display: block;
+	    font-size: 1.1em;
+  }
+  @media only screen and (min-width: 1024px) {
+        background-color: lightblue;
+      	font-size: 1.5em;
+  }
 }
