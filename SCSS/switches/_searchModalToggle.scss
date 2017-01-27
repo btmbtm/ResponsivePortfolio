@@ -2,6 +2,10 @@
   display:none;
 }
 
+label[for="searchModalToggle"]{
+  cursor: pointer;
+}
+
 #searchModalToggle:checked ~ #SearchModal{
   height: 0;
   top: -300px;
@@ -17,20 +21,4 @@
   transition: all 1s ease-in-out; 
 }
 
-.modalBackground{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: gray;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-}
 
-label[for="searchModalToggle"]{
-  cursor: pointer;
-}

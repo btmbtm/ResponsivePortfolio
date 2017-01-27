@@ -4,21 +4,23 @@
 @import 'base/_base';
 
 @import 'components/_skills';
+@import 'components/_searchModal';
+@import 'components/_modalBackground';
+@import 'components/_transition';
+@import 'components/_businessCard';
 
-@import 'layout/_searchModalToggle';
-@import 'layout/_mobileToggle';
 @import 'layout/_mobileNav';
 @import 'layout/_standardNav';
 @import 'layout/_main';
 @import 'layout/_about';
 @import 'layout/_projects';
-
 @import 'layout/_footer';
-@import 'layout/_searchModal';
-@import 'components/_transition';
-@import 'components/_businessCard';
+
+
 
 @import 'switches/_mainSwitches';
+@import 'switches/_mobileToggle';
 @import 'switches/_projectSwitches';
 @import 'switches/_projectCarouselSwitches';
+@import 'switches/_searchModalToggle';
 
