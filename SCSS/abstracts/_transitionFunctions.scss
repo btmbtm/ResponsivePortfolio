@@ -1,0 +1,110 @@
+
+@-webkit-keyframes dropBars{
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dropBars{
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes swingInItems{
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes swingInItems{
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes swingInItemsRight{
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes swingInItemsRight{
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes liftBars{
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+s  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes liftBars{
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes liftDisplay{
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes liftDisplay{
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
