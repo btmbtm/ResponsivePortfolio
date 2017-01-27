@@ -1,24 +1,3 @@
-
-.swatches{
-  width: 600px; 
-  display: -webkit-box; 
-  display: -ms-flexbox; 
-  display: flex; 
-  -ms-flex-flow: row wrap; 
-      flex-flow: row wrap;
-  margin: 0 auto;
-  
-}
-
-.swatch{
-  width: 140px;
-  height: 140px;
-  padding: 5px;
-  margin: 3px;
-  background: -webkit-linear-gradient(315deg, blue, lightblue);
-  background: linear-gradient(135deg, blue, lightblue);
-}
-
 .bars{
   display: -webkit-box;
   display: -ms-flexbox;

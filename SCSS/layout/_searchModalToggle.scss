@@ -1,6 +1,5 @@
 #searchModalToggle{
   display:none;
-
 }
 
 #searchModalToggle:checked ~ #SearchModal{
@@ -16,7 +15,6 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
-  
 }
 
 .modalBackground{
