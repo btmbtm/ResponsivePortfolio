@@ -35,7 +35,7 @@
   @include transition(swingInItems, 1, $easeB, 1.1s);
 }
 
-.projects_carousel_tabs li:nth-child(2n+1), .bcard_holder {
+.projects_carousel_tabs li:nth-child(2n+1), .businessCard__container {
   @include transition(swingInItems, 1, $easeB, 0.9s);
 
 }

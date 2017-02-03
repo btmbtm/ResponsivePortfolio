@@ -1,6 +1,6 @@
 //MAKE BARS A COMPONENT -> ABOUT BARS/ ABOUT BARS SHOULD BE RENAMED
 
-.about_bars{
+.introBars{
   position: relative;
 
   @include flexBox;
@@ -14,27 +14,23 @@
 
 }
 
-.about_bars_intro{
-  position: absolute;
-  
-  top: 30vh;
-
-  width: 95vw;
-
-  color: snow;
+.introBars__intro{
   background-color: black;
-
+  color: snow;
+  position: absolute;
+  top: 30vh;
+  width: 95vw;
   z-index: 5;
-  
 
   @media only screen and (min-width: 600px) {
     width: 50vw;
   }
+
 }
 
 
-.about_bars_bar{
-  width: 10px;
+.introBars__bar{
   background-color: black;
   margin: 10px 10px;
+  width: 10px;
 }

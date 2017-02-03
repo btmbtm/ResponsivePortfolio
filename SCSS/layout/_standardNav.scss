@@ -1,5 +1,5 @@
 
-#standardNav{
+.standardNav{
   display: none;
 
   -webkit-box-orient: horizontal;
@@ -24,12 +24,12 @@
   }
 }
 
-.nav_name{
+.nav__name{
   font-family: 'Architects Daughter', cursive;
   font-size: 1.6em;
 }
 
-.nav_links{
+.nav__links{
   @include flexBox;
 
   -ms-flex-flow: row ;
@@ -40,20 +40,20 @@
   padding: 0;
 }
 
-.nav_links li{
+.nav__link{
   margin: 0 10px;  
 }
 
-.nav_links li label{
-  cursor: pointer;
-}
-
-.nav_links li:hover{
+.nav__label:hover{
   color: blue;
   font-weight: bolder;
 }
 
-.nav_search i{
+.nav__label{
+  cursor: pointer;
+}
+
+.nav__searchIcon {
   cursor: pointer;
 }
 

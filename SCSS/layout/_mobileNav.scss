@@ -1,5 +1,5 @@
 
-#mobileNav{
+.mobileNav{
 
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
@@ -165,14 +165,14 @@ label[for="toggleNav"]{
 
 }
 
-#toggleNav:checked ~ #mobileNav{
+#toggleNav:checked ~ .mobileNav{
   width: 40vw;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   z-index: inherit;
 }
 
-#toggleNav:not(:checked) ~ #mobileNav{
+#toggleNav:not(:checked) ~ .mobileNav{
   width: 0;
   
   -webkit-transition: all 1s ease-in-out;

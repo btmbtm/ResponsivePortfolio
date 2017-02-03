@@ -32,27 +32,33 @@
 <!-- TOP NAV BAR -->
 <!-- =========== -->
 <input type="checkbox" name="toggleNav" id="toggleNav" />
-<nav id="standardNav">
-  <div class="nav_name">btmbtm</div>
 
-  <ul class="nav_links">
-    <li><label for="aboutSwitch">About</label></li>
-    <li><label for="projectsSwitch">Projects</label>
+<nav class="standardNav">
+  <div class="nav__name">btmbtm</div>
+
+  <ul class="nav__links">
+    <li class="nav__link"><label class="nav__label" for="aboutSwitch">About</label></li>
+    <li class="nav__link"><label class="nav__label" for="projectsSwitch">Projects</label>
     </li>
-    <li><label for="skillsSwitch">Skills</label></li>
-    <li><label for="contactSwitch">Contact</label></li>
+    <li class="nav__link"><label class="nav__label" for="skillsSwitch">Skills</label></li>
+    <li class="nav__link"><label class="nav__label" for="contactSwitch">Contact</label></li>
   </ul>
-  <div class="nav_search"> <input type="text" placeholder="Search" />
+  <div class="nav__search"> <input type="text" placeholder="Search" />
     <label for="searchModalToggle">
-      <i class="fa fa-search" aria-hidden="true"> </i>
+      <i class="nav__searchIcon fa fa-search" aria-hidden="true"> </i>
     </label>
   </div>
 </nav>
-<nav id="mobileNav">
+
+<!-- ============== -->
+<!-- MOBILE NAV BAR -->
+<!-- ============== -->
+
+<nav class="mobileNav">
   <div class="mobileNav_name">btmbtm</div>
   <ul class="mobileNav_links">
-    <li><label for="aboutSwitch">About</label></li>
-    <li><label for="projectsSwitch">Projects
+    <li class="mobileNav_link"><label class="mobileNav_label"for="aboutSwitch">About</label></li>
+    <li class="mobileNav_link"><label class="mobileNav_label" for="projectsSwitch">Projects
       </label>
       
       <ul class="mobileNav_projects_carousel_tabs">
@@ -62,8 +68,8 @@
         <li><label for="shoppingCartSwitch">Shopping Page</label></li>
         <li><label for="otherProjectsSwitch">Other Projects</label></li>
       </ul>
-    <li><label for="skillsSwitch">Skills</label></li>
-    <li><label for="contactSwitch">Contact</label></li>
+    <li class="mobileNav_link"><label class="mobileNav_label" for="skillsSwitch">Skills</label></li>
+    <li class="mobileNav_link"><label class="mobileNav_label" for="contactSwitch">Contact</label></li>
   </ul>
   <div class="mobileNav_search">
     <label for="mobileNav_searchInput">Search:</label>
@@ -94,18 +100,18 @@
   <!-- ABOUT SECTION -->
   <!-- ============= -->
   <section id="About">
-    <h1>About</h1>
-    <div class="about_bars">
-      <div class="about_bars_intro">My names btmbtm. I'm just a simple web dev. I live in New York. I like dogs and cats. I know some stuff about HTML5/CSS3/JavaScript.</div>
-      <div class="about_bars_bar" id="bar1"></div>
-      <div class="about_bars_bar" id="bar2"></div>
-      <div class="about_bars_bar" id="bar3"></div>
-      <div class="about_bars_bar" id="bar4"></div>
-      <div class="about_bars_bar" id="bar5"></div>
-      <div class="about_bars_bar" id="bar6"></div>
-      <div class="about_bars_bar" id="bar7"></div>
-      <div class="about_bars_bar" id="bar8"></div>
-      <div class="about_bars_bar" id="bar9"></div>
+    <h1 class="section__title">About</h1>
+    <div class="introBars">
+      <div class="introBars__intro">My names btmbtm. I'm just a simple web dev. I live in New York. I like dogs and cats. I know some stuff about HTML5/CSS3/JavaScript.</div>
+      <div class="introBars__bar" id="bar1"></div>
+      <div class="introBars__bar" id="bar2"></div>
+      <div class="introBars__bar" id="bar3"></div>
+      <div class="introBars__bar" id="bar4"></div>
+      <div class="introBars__bar" id="bar5"></div>
+      <div class="introBars__bar" id="bar6"></div>
+      <div class="introBars__bar" id="bar7"></div>
+      <div class="introBars__bar" id="bar8"></div>
+      <div class="introBars__bar" id="bar9"></div>
     </div>
     
     
@@ -124,7 +130,7 @@
     <input type="radio" name="projectSwitches" id="shoppingCartSwitch" />
     <input type="radio" name="projectSwitches" id="otherProjectsSwitch" />
 
-    <h1>Projects</h1>
+    <h1 class="section__title">Projects</h1>
     <div class="projects_carousel">
 
       <ul class="projects_carousel_tabs">
@@ -414,7 +420,7 @@
   <!-- SKILLS SECTION -->
   <!-- ============== -->
   <section id="Skills">
-    <h1>Skills</h1>
+    <h1 class="section__title">Skills</h1>
     <div class="skillCharts_container">
       <div class="skillChart_container">
         <div class="skillChart_title">Front End Dev</div>
@@ -549,45 +555,47 @@
   <!-- ================ -->
 
   <section id="contact">
-    <h1>Contact</h1>
-    <input class="bCardInput" id="bcardFlipCheck" type="checkbox" />
-<div class="bcard_holder" >
-  
-  <div class="bcard_card">
-    <div class="bcard_front">
-      <label for="bcardFlipCheck" class="bcard_flipIcon"><i class="fa fa-repeat  fa-2x" aria-hidden="true"></i></label>
-        <div>
-          
-          <h2 id="bcard_name">Brian Merriman</h2>
-          <h3 id="bcard_nameSub"> Modern Dev Student </h3>
-      </div>
-        
-        <p>
-          Brian is currently a student at Modern Developer studying  full stack development. He likes codin' purty stuff.
-        </p>
-        <ul id="bcard_basicWebInfo"> 
-          <li>merriman.bt@gmail.com</li>
-          <li>btmbtm.github.io/</li>
-        </ul>
-      <div id="bcard_networkLinks">  
-        <div class="bcard_networkLink"><a href="google.com">
-          <img id="bcard_ency" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/enc1.png" alt="" /></a>
-          <figcaption>Brian Merriman <br /> <span class="bcard_purpleText">on Encyclopedia.MD </span> </figcaption>
+    <h1 class="section__title">Contact</h1>
+    <input id="businessCard__switch-1" class="businessCard__switch" type="checkbox" />
+    <div class="businessCard__container">
+      <div class="businessCard">
+        <div class="businessCard__front">
+          <label for="businessCard__switch-1" class="businessCard__flipLabel"><i class=" businessCard__flipIcon fa fa-repeat  fa-2x" aria-hidden="true"></i></label>
+          <div>
+
+            <h2 class="businessCard__name">Brian M.</h2>
+            <h3 class="businessCard__currentPosition"> Modern Dev Student </h3>
+          </div>
+
+          <p class="businessCard__bio">
+            Brian is currently a student at Modern Developer studying full stack development. He also runs a small tea business and tutors.
+          </p>
+          <ul class="businessCard__contactList">
+            <li class="businessCard__contactItem">merriman.bt@gmail.com</li>
+            <li class="businessCard__contactItem businessCard__contactItem--notFirst">btmbtm.github.io/</li>
+          </ul>
+          <div class="businessCard__networkLinks">
+            <div class="businessCard__networkLink businessCard__networkLink--main">
+              <a href="google.com">
+                <img class="businessCard__networkLogo businessCard__networkLogo--main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/enc1.png" alt="" /></a>
+              <figcaption class="businessCard__figcaption">Brian Merriman <br /> <span class="businessCard__networkLogoDescription">on Encyclopedia.MD </span> </figcaption>
+            </div>
+
+
+            <div class="networkLink businessCard__networkLink--other">
+              <a href="https://github.com/btmbtm"> <img class="businessCard__networkLogo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/github1.png" alt="" /></a>
+            </div>
+          </div>
+
         </div>
-        
-      
-       <div class="bcard_networkLink"><a href="https://github.com/btmbtm">          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/github1.png" alt="" /></a></div>
+        <div class="businessCard__back">
+          <label for="businessCard__switch-1" class="businessCard__flipIcon"><i class="fa fa-undo  fa-2x" aria-hidden="true"></i></label>
+          <div class="businessCard__backName">
+            Brian Merriman
+          </div>
+        </div>
       </div>
-        
     </div>
-    <div class="bcard_back">      
-      <label for="bcardFlipCheck" class="bcard_flipIcon"><i class="fa fa-undo  fa-2x" aria-hidden="true"></i></label>
-      <div id="bcard_highlightedName">
-        Brian Merriman
-      </div>
-     </div>
-  </div>
-</div>
   </section>
 </main>
 
