@@ -24,12 +24,12 @@
   }
 }
 
-.nav__name{
+.standardNav__name{
   font-family: 'Architects Daughter', cursive;
   font-size: 1.6em;
 }
 
-.nav__links{
+.standardNav__links{
   @include flexBox;
 
   -ms-flex-flow: row ;
@@ -40,20 +40,20 @@
   padding: 0;
 }
 
-.nav__link{
+.standardNav__link{
   margin: 0 10px;  
 }
 
-.nav__label:hover{
+.standardNav__label:hover{
   color: blue;
   font-weight: bolder;
 }
 
-.nav__label{
+.standardNav__label{
   cursor: pointer;
 }
 
-.nav__searchIcon {
+.standardNav__searchIcon {
   cursor: pointer;
 }
 

@@ -10,7 +10,7 @@
 @import 'components/_introBars';
 @import 'components/_businessCard';
 @import 'components/_modalBackground';
-@import 'components/_projectsCarousel';
+@import 'components/_projectCarousel';
 @import 'components/_searchModal';
 @import 'components/_skills';
 
@@ -18,10 +18,13 @@
 @import 'layout/_standardNav';
 @import 'layout/_main';
 @import 'layout/_section';
+@import 'layout/_projectsDisplay';
 @import 'layout/_footer';
 
 @import 'switches/_mainSwitches';
 @import 'switches/_projectSwitches';
 @import 'switches/_projectCarouselSwitches'; 
 @import 'switches/_searchModalToggleSwitch'; 
+@import 'switches/_mobileNavProjectSwitches'; 
+@import 'switches/_mobileNavToggleSwitch'; 
 

@@ -30,41 +30,43 @@
 
 }
 
-.mobileNav_name{
+.mobileNav__name{
   padding: 10px;
   font-size: 1.2em;
   font-family: 'Architects Daughter', cursive;
 }
 
-.mobileNav_links{
+.mobileNav__links{
   @include clear-List;
 }
-.mobileNav_links li{
+
+.mobileNav__link{
   padding: 10px;
 }
 
-.mobileNav_links li label{
+.mobileNav__label{
   display: block;
 
 }
 
-.mobileNav_links li:hover label{
+.mobileNav__link:hover > .mobileNav__label{
   color: blue;
   font-weight: boldest;
   cursor: pointer;
 }
 
 
-.mobileNav_search{
+.mobileNav__search{
   padding: 10px;
+
 }
 
-.mobileNav_search #mobileNav_searchInput{
+#mobileNav__searchInput{
   font-size: 1.1em;
   width: 100%;
 }
 
-.mobileNav_footer{
+.mobileNav__footer{
   padding: 10px;
   
   -webkit-box-flex: 2;
@@ -83,98 +85,29 @@
           justify-content: flex-end;
 }
 
-.mobileNav_footer_text{
+.mobileNav__footerText{
   font-size: 0.7em;
   -ms-flex-item-align: bottom;
       -ms-grid-row-align: bottom;
       align-self: bottom;
 }
-
-.mobileNav_projects_carousel_tabs{
-  height: 0;
-
-  opacity:0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  
-  overflow: hidden;
-  
-  color: black;
-  
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
+.mobileNav__searchInput{
+    border: 1px solid black;
 }
 
-.mobileNav_projects_carousel_tabs > li > label{
+.mobileNav__projectsCarouselTabs{
+  color: black;
+  height: 0;  
+  margin: 5px 0;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.mobileNav__projectsCarouselTab{
+  margin: 10px 0;
+}
+
+.mobileNav__projectsCarouselLabel{
   color: black !important;
 }
 
-input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav_links > li:nth-child(2)  .mobileNav_projects_carousel_tabs{
-  height: 100%;
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-}
-
-input[name='mobile_projectsSwitch']{
-  height: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-}
-
-#toggleNav {
-  display: none;
-
-}
-
-label[for="toggleNav"]{  
-  display: block;
-  width: 100%;
-  background-color: white;
-  padding: 5px;
-  cursor: pointer;
-  width: 100vw;
-  @media only screen and (min-width: 600px) {
-    display: none;
-    width: none;
-  }
-}
-
-
-
-#toggleNav:checked ~ main label[for="toggleNav"] #enterNav{
-  display: none;
-}
-
-#toggleNav:not(:checked) ~ main label[for="toggleNav"] #exitNav{
-  display: none;
-}
-
-#toggleNav:checked ~ main{
-  position: relative;
-  -webkit-transform: translateX(40vw);
-          transform: translateX(40vw);
-
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-
-  @media only screen and (min-width: 600px) {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
-}
-
-#toggleNav:checked ~ .mobileNav{
-  width: 40vw;
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: inherit;
-}
-
-#toggleNav:not(:checked) ~ .mobileNav{
-  width: 0;
-  
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-}

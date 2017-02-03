@@ -1,0 +1,5 @@
+input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav__links > li:nth-child(2)  .mobileNav__projectsCarouselTabs{
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
+}

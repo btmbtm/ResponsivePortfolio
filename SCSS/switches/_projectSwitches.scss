@@ -3,14 +3,14 @@ input[name="projectSwitches"]{
 }
 
 @for $i from 1 through 5 {
-	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projects_carousel  .projects_carousel_tabs li:nth-of-type(#{$i}){
+	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projectsDisplay .projectsDisplay__tab:nth-of-type(#{$i}){
   		background-color: rgba(50,50,50, 0.7);
   		color: white;
 	}
 }
 
 @for $i from 1 through 5 {
-	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projects_carousel  .project_carousel_display div.project_carousel_display_item:nth-of-type(#{$i}){
+	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projectsDisplay  .projectCarousel__container:nth-of-type(#{$i}){
   		display: block
 	}
 }

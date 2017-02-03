@@ -4,7 +4,7 @@ input[name="sectionSwitches"]{
 
 // HIGHLIGHT SELECTED SECTION NAME LINK IN NAV 
 @for $i from 1 through 4 {
-input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .standardNav .nav__links > .nav__link:nth-child(#{$i}) .nav__label
+input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .standardNav .standardNav__links > .standardNav__link:nth-child(#{$i}) .standardNav__label
   {
     color: red; 
     font-weight: bold;
@@ -13,7 +13,7 @@ input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .standardNav .nav__link
 
 // HIGHLIGHT SELECTED SECTION NAME IN MOBILE NAV
 @for $i from 1 through 4 {
-input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .mobileNav .mobileNav_links > .mobileNav_link:nth-child(#{$i}) .mobileNav_label {
+input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .mobileNav .mobileNav__links > .mobileNav__link:nth-child(#{$i}) .mobileNav__label {
     color: red; 
     font-weight: bold;
   }

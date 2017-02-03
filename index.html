@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>BTMBTM'S PORTFOLIO</title>
 
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
 
@@ -34,18 +34,18 @@
 <input type="checkbox" name="toggleNav" id="toggleNav" />
 
 <nav class="standardNav">
-  <div class="nav__name">btmbtm</div>
+  <div class="standardNav__name">btmbtm</div>
 
-  <ul class="nav__links">
-    <li class="nav__link"><label class="nav__label" for="aboutSwitch">About</label></li>
-    <li class="nav__link"><label class="nav__label" for="projectsSwitch">Projects</label>
+  <ul class="standardNav__links">
+    <li class="standardNav__link"><label class="standardNav__label" for="aboutSwitch">About</label></li>
+    <li class="standardNav__link"><label class="standardNav__label" for="projectsSwitch">Projects</label>
     </li>
-    <li class="nav__link"><label class="nav__label" for="skillsSwitch">Skills</label></li>
-    <li class="nav__link"><label class="nav__label" for="contactSwitch">Contact</label></li>
+    <li class="standardNav__link"><label class="standardNav__label" for="skillsSwitch">Skills</label></li>
+    <li class="standardNav__link"><label class="standardNav__label" for="contactSwitch">Contact</label></li>
   </ul>
-  <div class="nav__search"> <input type="text" placeholder="Search" />
+  <div class="standardNav__search"> <input type="text" placeholder="Search" />
     <label for="searchModalToggle">
-      <i class="nav__searchIcon fa fa-search" aria-hidden="true"> </i>
+      <i class="standardNav__searchIcon fa fa-search" aria-hidden="true"> </i>
     </label>
   </div>
 </nav>
@@ -55,32 +55,32 @@
 <!-- ============== -->
 
 <nav class="mobileNav">
-  <div class="mobileNav_name">btmbtm</div>
-  <ul class="mobileNav_links">
-    <li class="mobileNav_link"><label class="mobileNav_label"for="aboutSwitch">About</label></li>
-    <li class="mobileNav_link"><label class="mobileNav_label" for="projectsSwitch">Projects
+  <div class="mobileNav__name">btmbtm</div>
+  <ul class="mobileNav__links">
+    <li class="mobileNav__link"><label class="mobileNav__label" for="aboutSwitch">About</label></li>
+    <li class="mobileNav__link"><label class="mobileNav__label" for="projectsSwitch">Projects
       </label>
       
-      <ul class="mobileNav_projects_carousel_tabs">
-        <li><label for="calcProjectSwitch">Real Calculator</label></li>
-        <li><label for="nonJSUIComponentsSwitch">UI Componenets</label></li>
-        <li><label for="formProjectSwitch">Forms</label></li>
-        <li><label for="shoppingCartSwitch">Shopping Page</label></li>
-        <li><label for="otherProjectsSwitch">Other Projects</label></li>
+      <ul class="mobileNav__projectsCarouselTabs">
+        <li class="mobileNav__projectsCarouselTab"><label class="mobileNav__projectsCarouselLabel"for="calcProjectSwitch">Real Calculator</label></li>
+        <li class="mobileNav__projectsCarouselTab"><label class="mobileNav__projectsCarouselLabel" for="nonJSUIComponentsSwitch">UI Componenets</label></li>
+        <li class="mobileNav__projectsCarouselTab"><label class="mobileNav__projectsCarouselLabel" for="formProjectSwitch">Forms</label></li>
+        <li class="mobileNav__projectsCarouselTab"><label class="mobileNav__projectsCarouselLabel" for="shoppingCartSwitch">Shopping Page</label></li>
+        <li class="mobileNav__projectsCarouselTab"><label class="mobileNav__projectsCarouselLabel" for="otherProjectsSwitch">Other Projects</label></li>
       </ul>
-    <li class="mobileNav_link"><label class="mobileNav_label" for="skillsSwitch">Skills</label></li>
-    <li class="mobileNav_link"><label class="mobileNav_label" for="contactSwitch">Contact</label></li>
+    <li class="mobileNav__link"><label class="mobileNav__label" for="skillsSwitch">Skills</label></li>
+    <li class="mobileNav__link"><label class="mobileNav__label" for="contactSwitch">Contact</label></li>
   </ul>
-  <div class="mobileNav_search">
-    <label for="mobileNav_searchInput">Search:</label>
-    <input type="text" id="mobileNav_searchInput" />
+  <div class="mobileNav__search">
+    <label for="mobileNav__searchInput">Search:</label>
+    <input type="text" class="mobileNav__searchInput" id="mobileNav__searchInput" />
     <label for="searchModalToggle">
       <i class="fa fa-search" aria-hidden="true"> </i>
     </label>
 
   </div>
-  <footer class="mobileNav_footer">
-    <div class="mobileNav_footer_text">
+  <footer class="mobileNav__footer">
+    <div class="mobileNav__footerText">
       © 2016 - btmbtm
     </div>
   </footer>
@@ -131,87 +131,93 @@
     <input type="radio" name="projectSwitches" id="otherProjectsSwitch" />
 
     <h1 class="section__title">Projects</h1>
-    <div class="projects_carousel">
+    <div class="projectsDisplay">
 
-      <ul class="projects_carousel_tabs">
-        <li><label for="calcProjectSwitch">Real Calculator</label></li>
-        <li><label for="nonJSUIComponentsSwitch">UI Componenets</label></li>
-        <li><label for="formProjectSwitch">Forms</label></li>
-        <li><label for="shoppingCartSwitch">Shopping Page</label></li>
-        <li><label for="otherProjectsSwitch">Other Projects</label></li>
+      <ul class="projectsDisplay__tabs">
+        <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="calcProjectSwitch">Real Calculator</label></li>
+        <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="nonJSUIComponentsSwitch">UI Componenets</label></li>
+        <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="formProjectSwitch">Forms</label></li>
+        <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="shoppingCartSwitch">Shopping Page</label></li>
+        <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="otherProjectsSwitch">Other Projects</label></li>
       </ul>
+      
 
-      <section class="project_carousel_display">
-        <div class="project_carousel_display_item" id="RealCalc_Display">
-          <div class="project_carousel_display_carousel">
+      <section class="projectsDisplay__projectsCarousel">
 
-            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1A" checked />
-            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1B" />
-            <input type="radio" name="project_carousel_switch-1" id="project_carousel_switch-1C" />
+        <!-- CALCULATOR -->
+        <div class="projectCarousel__container" id="RealCalc_Display">
+          <div class="projectCarousel">
 
-            <div class="project_carousel_display_carousel_images">
-              <div class="sliderLeft">
-                <label for="project_carousel_switch-1A" class="carousel_navArrow">
+            <input type="radio" name="projectCarousel__switch-1" id="projectCarousel__switch-1A" checked />
+            <input type="radio" name="projectCarousel__switch-1" id="projectCarousel__switch-1B" />
+            <input type="radio" name="projectCarousel__switch-1" id="projectCarousel__switch-1C" />
+
+            <div class="projectCarousel__images">
+
+              <div class="projectCarousel__sliderLeft">
+                <label for="projectCarousel__switch-1A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-1B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-1B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-1C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-1C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-
               </div>
+
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-Calc.jpg" alt="" />
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-calc2.jpg" alt="" />
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-calc3.jpg" alt="" />
 
 
-              <div class="sliderRight">
-                <label for="project_carousel_switch-1A" class="carousel_navArrow">
+              <div class="projectCarousel__sliderRight">
+                <label for="projectCarousel__switch-1A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-1B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-1B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-1C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-1C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-
               </div>
+
             </div>
-            <div class="project_carousel_switch_container">
-              <label for="project_carousel_switch-1A">1</label>
-              <label for="project_carousel_switch-1B">2</label>
-              <label for="project_carousel_switch-1C">3</label>
+
+            <div class="projectCarousel__switches">
+              <label for="projectCarousel__switch-1A">1</label>
+              <label for="projectCarousel__switch-1B">2</label>
+              <label for="projectCarousel__switch-1C">3</label>
             </div>
 
 
           </div>
           <div class="project_carousel_display_item_info">
-            <h2>Real Calculator</h2>
+            <h2 class="projectCarousel__title">Real Calculator</h2>
             <div>
-              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
-              <p> A basic JavaScript calculator based on the original Mac OS calculator. </p>
+              <h3 class="projectCarousel__techInfo"> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p class="projectCarousel__description"> A basic JavaScript calculator based on the original Mac OS calculator. </p>
             </div>
           </div>
         </div>
-        <div class="project_carousel_display_item" id="UIComp_Display">
-          <div class="project_carousel_display_carousel">
+        <div class="projectCarousel__container" id="UIComp_Display">
+          <div class="projectCarousel">
 
-            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2A" checked />
-            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2B" />
-            <input type="radio" name="project_carousel_switch-2" id="project_carousel_switch-2C" />
+            <input type="radio" name="projectCarousel__switch-2" id="projectCarousel__switch-2A" checked />
+            <input type="radio" name="projectCarousel__switch-2" id="projectCarousel__switch-2B" />
+            <input type="radio" name="projectCarousel__switch-2" id="projectCarousel__switch-2C" />
 
-            <div class="project_carousel_display_carousel_images">
-              <div class="sliderLeft">
-                <label for="project_carousel_switch-2A" class="carousel_navArrow">
+            <div class="projectCarousel__images">
+
+              <div class="projectCarousel__sliderLeft">
+                <label for="projectCarousel__switch-2A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-2B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-2B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-2C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-2C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
 
@@ -221,51 +227,56 @@
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-MenuAccordion.jpg" alt="" />
 
 
-              <div class="sliderRight">
-                <label for="project_carousel_switch-2A" class="carousel_navArrow">
+              <div class="projectCarousel__sliderRight">
+                <label for="projectCarousel__switch-2A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-2B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-2B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-2C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-2C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-
               </div>
+
             </div>
-            <div class="project_carousel_switch_container">
-              <label for="project_carousel_switch-2A">1</label>
-              <label for="project_carousel_switch-2B">2</label>
-              <label for="project_carousel_switch-2C">3</label>
+
+            <div class="projectCarousel__switches">
+              <label for="projectCarousel__switch-2A">1</label>
+              <label for="projectCarousel__switch-2B">2</label>
+              <label for="projectCarousel__switch-2C">3</label>
             </div>
 
 
           </div>
+
           <div class="project_carousel_display_item_info">
-            <h2>Non-JS UI Components</h2>
+            <h2 class="projectCarousel__title">Non-JS UI Components</h2>
             <div>
-              <h3> <span>Technologies:</span> HTML5, and CSS3 </h3>
-              <p> Dynamic UI components only using HTML5/CSS. Projects include a basic image gallery, an accordian restaurant menu, and a business card. </p>
+              <h3 class="projectCarousel__techInfo"> <span>Technologies:</span> HTML5, and CSS3 </h3>
+              <p class="projectCarousel__description"> Dynamic UI components only using HTML5/CSS. Projects include a basic image gallery, an accordian restaurant menu, and a business card. </p>
             </div>
           </div>
         </div>
-        <div class="project_carousel_display_item" id="Form_Display">
-          <div class="project_carousel_display_carousel">
+        <!-- END CALCULATOR PROJECT -->
 
-            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3A" checked />
-            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3B" />
-            <input type="radio" name="project_carousel_switch-3" id="project_carousel_switch-3C" />
+        <!-- FORMS PROJECT -->
+        <div class="projectCarousel__container" id="Form_Display">
+          <div class="projectCarousel">
 
-            <div class="project_carousel_display_carousel_images">
-              <div class="sliderLeft">
-                <label for="project_carousel_switch-3A" class="carousel_navArrow">
+            <input type="radio" name="projectCarousel__switch-3" id="projectCarousel__switch-3A" checked />
+            <input type="radio" name="projectCarousel__switch-3" id="projectCarousel__switch-3B" />
+            <input type="radio" name="projectCarousel__switch-3" id="projectCarousel__switch-3C" />
+
+            <div class="projectCarousel__images">
+              <div class="projectCarousel__sliderLeft">
+                <label for="projectCarousel__switch-3A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-3B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-3B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-3C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-3C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
 
@@ -275,51 +286,54 @@
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-form-color.jpg" alt="" />
 
 
-              <div class="sliderRight">
-                <label for="project_carousel_switch-3A" class="carousel_navArrow">
+              <div class="projectCarousel__sliderRight">
+                <label for="projectCarousel__switch-3A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-3B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-3B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-3C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-3C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
 
               </div>
             </div>
-            <div class="project_carousel_switch_container">
-              <label for="project_carousel_switch-3A">1</label>
-              <label for="project_carousel_switch-3B">2</label>
-              <label for="project_carousel_switch-3C">3</label>
+            <div class="projectCarousel__switches">
+              <label for="projectCarousel__switch-3A">1</label>
+              <label for="projectCarousel__switch-3B">2</label>
+              <label for="projectCarousel__switch-3C">3</label>
             </div>
 
 
           </div>
           <div class="project_carousel_display_item_info">
-            <h2>Form Components</h2>
+            <h2 class="projectCarousel__title">Form Components</h2>
             <div>
-              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
-              <p> A wide variet of forms that includes custom client side form validation. Forms include a login form, a color builder, a shipping/billing form among others.</p>
+              <h3 class="projectCarousel__techInfo"> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p class="projectCarousel__description"> A wide variet of forms that includes custom client side form validation. Forms include a login form, a color builder, a shipping/billing form among others.</p>
             </div>
           </div>
         </div>
-        <div class="project_carousel_display_item" id="Shopping_Display">
-          <div class="project_carousel_display_carousel">
+        <!-- END FORMS PROJECT -->
 
-            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4A" checked />
-            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4B" />
-            <input type="radio" name="project_carousel_switch-4" id="project_carousel_switch-4C" />
+        <!-- SHOPPING PAGE -->
+        <div class="projectCarousel__container" id="Shopping_Display">
+          <div class="projectCarousel">
 
-            <div class="project_carousel_display_carousel_images">
-              <div class="sliderLeft">
-                <label for="project_carousel_switch-4A" class="carousel_navArrow">
+            <input type="radio" name="projectCarousel__switch-4" id="projectCarousel__switch-4A" checked />
+            <input type="radio" name="projectCarousel__switch-4" id="projectCarousel__switch-4B" />
+            <input type="radio" name="projectCarousel__switch-4" id="projectCarousel__switch-4C" />
+
+            <div class="projectCarousel__images">
+              <div class="projectCarousel__sliderLeft">
+                <label for="projectCarousel__switch-4A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-4B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-4B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-4C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-4C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
 
@@ -329,51 +343,54 @@
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-store3.jpg" alt="" />
 
 
-              <div class="sliderRight">
-                <label for="project_carousel_switch-4A" class="carousel_navArrow">
+              <div class="projectCarousel__sliderRight">
+                <label for="projectCarousel__switch-4A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-4B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-4B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-4C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-4C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
 
               </div>
             </div>
-            <div class="project_carousel_switch_container">
-              <label for="project_carousel_switch-4A">1</label>
-              <label for="project_carousel_switch-4B">2</label>
-              <label for="project_carousel_switch-4C">3</label>
+            <div class="projectCarousel__switches">
+              <label for="projectCarousel__switch-4A">1</label>
+              <label for="projectCarousel__switch-4B">2</label>
+              <label for="projectCarousel__switch-4C">3</label>
             </div>
 
 
           </div>
           <div class="project_carousel_display_item_info">
-            <h2>Form Components</h2>
+            <h2 class="projectCarousel__title">Form Components</h2>
             <div>
-              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
-              <p> A basic shopping page that tracks cart contents and offers a cart modal. Client-side JavaScript is used to keep track of cart items, cart totals, applied discount codes etc.</p>
+              <h3 class="projectCarousel__techInfo"> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p class="projectCarousel__description"> A basic shopping page that tracks cart contents and offers a cart modal. Client-side JavaScript is used to keep track of cart items, cart totals, applied discount codes etc.</p>
             </div>
           </div>
         </div>
-        <div class="project_carousel_display_item" id="Formp_Display">
-          <div class="project_carousel_display_carousel">
+        <!-- END SHOPPING PAGE PROJECT -->
 
-            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5A" checked />
-            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5B" />
-            <input type="radio" name="project_carousel_switch-5" id="project_carousel_switch-5C" />
+        <!-- OTHER PROJECTS -->
+        <div class="projectCarousel__container" id="Formp_Display">
+          <div class="projectCarousel">
 
-            <div class="project_carousel_display_carousel_images">
-              <div class="sliderLeft">
-                <label for="project_carousel_switch-5A" class="carousel_navArrow">
+            <input type="radio" name="projectCarousel__switch-5" id="projectCarousel__switch-5A" checked />
+            <input type="radio" name="projectCarousel__switch-5" id="projectCarousel__switch-5B" />
+            <input type="radio" name="projectCarousel__switch-5" id="projectCarousel__switch-5C" />
+
+            <div class="projectCarousel__images">
+              <div class="projectCarousel__sliderLeft">
+                <label for="projectCarousel__switch-5A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-5B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-5B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-5C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-5C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </label>
 
@@ -383,35 +400,36 @@
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/portfolio-sidebar.jpg" alt="" />
 
 
-              <div class="sliderRight">
-                <label for="project_carousel_switch-5A" class="carousel_navArrow">
+              <div class="projectCarousel__sliderRight">
+                <label for="projectCarousel__switch-5A" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-5B" class="carousel_navArrow">
+                <label for="projectCarousel__switch-5B" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
-                <label for="project_carousel_switch-5C" class="carousel_navArrow">
+                <label for="projectCarousel__switch-5C" class="projectCarousel__navArrow">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </label>
 
               </div>
             </div>
-            <div class="project_carousel_switch_container">
-              <label for="project_carousel_switch-5A">1</label>
-              <label for="project_carousel_switch-5B">2</label>
-              <label for="project_carousel_switch-5C">3</label>
+            <div class="projectCarousel__switches">
+              <label for="projectCarousel__switch-5A">1</label>
+              <label for="projectCarousel__switch-5B">2</label>
+              <label for="projectCarousel__switch-5C">3</label>
             </div>
 
 
           </div>
           <div class="project_carousel_display_item_info">
-            <h2>Other Projects</h2>
+            <h2 class="projectCarousel__title">Other Projects</h2>
             <div>
-              <h3> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
-              <p> A bunch of basic web page projects.</p>
+              <h3 class="projectCarousel__techInfo"> <span>Technologies:</span> HTML5, CSS3, and JavaScript </h3>
+              <p class="projectCarousel__description"> A bunch of basic web page projects.</p>
             </div>
           </div>
         </div>
+        <!-- END OTHER PROJECTS -->
       </section>
     </div>
   </section>
@@ -622,12 +640,10 @@
   </label>
   <div class="searchModal__results">
     <h1>SEARCH TEMPORARILY DISABLED</h1>
-
   </div>
 </div>
 
-<div class="modalBackground">
+<div class="modalBackground"></div>
 
-</div>
 </body>
 </html>
