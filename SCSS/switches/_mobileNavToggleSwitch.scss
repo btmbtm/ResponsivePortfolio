@@ -3,33 +3,35 @@
 }
 
 label[for="toggleNav"]{  
-  display: block;
-  width: 100%;
   background-color: white;
-  padding: 5px;
   cursor: pointer;
-  width: 100vw;
+  display: block;
+  padding: 5px;
+  width: 100%;
   @media only screen and (min-width: 600px) {
     display: none;
-    width: none;
+    width: 0;
   }
 }
 
+// TOGGLE MOBILENAV HAMBURGER ICON
 #toggleNav:checked ~ main label[for="toggleNav"] #enterNav{
   display: none;
 }
 
+// TOGGLE MOBILENAV EXIT ICON
 #toggleNav:not(:checked) ~ main label[for="toggleNav"] #exitNav{
   display: none;
 }
 
+// PUSH MAIN SECTION RIGHT WHEN MOBILE NAV IS OPENED
 #toggleNav:checked ~ main{
   position: relative;
   -webkit-transform: translateX(40vw);
           transform: translateX(40vw);
 
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
 
   @media only screen and (min-width: 600px) {
     -webkit-transform: translateX(0);
@@ -38,16 +40,19 @@ label[for="toggleNav"]{
 
 }
 
+// OPEN MOBILE NAV WHEN TOGGLE IS CHECKED
 #toggleNav:checked ~ .mobileNav{
-  width: 40vw;
-  opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; 
+  width: 40vw;
   z-index: inherit;
 }
 
+// CLOSE MOBILE NAV WHEN TOGGLE IS CHECKED
 #toggleNav:not(:checked) ~ .mobileNav{
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
   width: 0;
-  
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
 }

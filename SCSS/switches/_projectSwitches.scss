@@ -2,6 +2,7 @@ input[name="projectSwitches"]{
   display:none;
 }
 
+// HIGHLIGHT PROJECT TAB WHEN PROJECT IS OPEN
 @for $i from 1 through 5 {
 	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projectsDisplay .projectsDisplay__tab:nth-of-type(#{$i}){
   		background-color: rgba(50,50,50, 0.7);
@@ -9,6 +10,7 @@ input[name="projectSwitches"]{
 	}
 }
 
+// OPEN PROJECT WHEN TAB IS SELECTED
 @for $i from 1 through 5 {
 	input[name="projectSwitches"]:nth-child(#{$i}):checked ~ .projectsDisplay  .projectCarousel__container:nth-of-type(#{$i}){
   		display: block

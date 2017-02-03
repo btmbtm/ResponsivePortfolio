@@ -1,39 +1,49 @@
-
+// SORTED
 .mobileNav{
-
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-
-  width: 0;
-
-  border-right: 2px solid black;
-  position: fixed;
-  height: 95vh;
-  left: 0;
-  background-color: white;
-
   @include flexBox;
 
+  background-color: white;
+  border-right: 2px solid black;
+  display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
+  height: 95vh;
+  left: 0;
   overflow: hidden;
+  position: fixed;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; 
+  width: 0;
 
-  display: inline-block;
-
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpointMed) {
     display: none;
     width: 0;
   }
 
 }
 
-.mobileNav__name{
+.mobileNav__footer{
+  @include flexBox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 10px;
-  font-size: 1.2em;
-  font-family: 'Architects Daughter', cursive;
+}
+
+.mobileNav__footerText{
+  font-size: 0.7em;
+  -ms-flex-item-align: bottom;
+      -ms-grid-row-align: bottom;
+      align-self: flex-end;
 }
 
 .mobileNav__links{
@@ -51,10 +61,15 @@
 
 .mobileNav__link:hover > .mobileNav__label{
   color: blue;
-  font-weight: boldest;
   cursor: pointer;
+  font-weight: bolder;
 }
 
+.mobileNav__name{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2em;
+  padding: 10px;
+}
 
 .mobileNav__search{
   padding: 10px;
@@ -66,31 +81,6 @@
   width: 100%;
 }
 
-.mobileNav__footer{
-  padding: 10px;
-  
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  
-  @include flexBox;
-  
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.mobileNav__footerText{
-  font-size: 0.7em;
-  -ms-flex-item-align: bottom;
-      -ms-grid-row-align: bottom;
-      align-self: bottom;
-}
 .mobileNav__searchInput{
     border: 1px solid black;
 }
@@ -101,6 +91,7 @@
   margin: 5px 0;
   overflow: hidden;
   padding: 3px;
+  border: 1px solid black;
 }
 
 .mobileNav__projectsCarouselTab{

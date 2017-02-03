@@ -1,9 +1,9 @@
 main{
   position: relative;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpointMed) {
       min-height: 80vh;
   }
 }

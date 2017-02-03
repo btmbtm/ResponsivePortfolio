@@ -1,4 +1,6 @@
-
+.projectCarousel{
+  
+}
 
 .projectCarousel__container{
   display: none;
@@ -60,7 +62,7 @@
   -webkit-transform: scale(0,0);
           transform: scale(0,0);
   -webkit-transition: width all 0.2s ease-out;
-  transition: width all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   
 }
 

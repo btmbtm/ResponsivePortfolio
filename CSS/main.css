@@ -15,11 +15,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -174,15 +174,15 @@ table {
   box-sizing: border-box; }
 
 body {
+  background-color: lightyellow;
   font-family: 'Roboto Mono', monospace;
-  width: 100vw;
   margin: 0 auto;
-  background-color: lightyellow; }
+  width: 100vw; }
   @media only screen and (min-width: 360px) {
     body {
       background-color: lightpink;
       width: 100vw; } }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 660px) {
     body {
       background-color: lightgreen;
       display: block;
@@ -190,15 +190,15 @@ body {
       width: 97vw; } }
   @media only screen and (min-width: 1024px) {
     body {
-      background-color: lightblue;
       font-size: 1.5em;
-      width: 90vw;
-      max-width: 1600px; } }
+      max-width: 1600px;
+      background-color: lightblue;
+      width: 90vw; } }
 
 .introBars {
   position: relative;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -272,6 +272,9 @@ body {
 
 .businessCard__contactItem--notFirst {
   padding-left: 10px; }
+  @media only screen and (max-width: 360px) {
+    .businessCard__contactItem--notFirst {
+      padding: 0; } }
 
 .businessCard__container {
   display: block;
@@ -281,6 +284,14 @@ body {
   position: relative;
   width: 500px;
   font-size: 16px; }
+  @media only screen and (max-width: 660px) {
+    .businessCard__container {
+      width: 360px;
+      font-size: 0.9em; } }
+  @media only screen and (max-width: 360px) {
+    .businessCard__container {
+      width: 300px;
+      font-size: 0.9em; } }
 
 .businessCard__currentPosition {
   font-weight: normal;
@@ -296,6 +307,9 @@ body {
   position: absolute;
   right: 20px;
   top: 20px; }
+  @media only screen and (max-width: 360px) {
+    .businessCard__flipIcon {
+      font-size: 1.2em; } }
 
 .businessCard__front {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/bg1.png");
@@ -312,7 +326,7 @@ body {
   margin: 0 auto; }
 
 .businessCard__networkLinks {
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: normal; }
 
 .businessCard__networkLink--main {
@@ -326,6 +340,9 @@ body {
 
 .businessCard__networkLogo {
   width: 50px; }
+  @media only screen and (max-width: 360px) {
+    .businessCard__networkLogo {
+      width: 35px; } }
 
 .businessCard__networkLogo--main {
   display: inline;
@@ -348,38 +365,18 @@ body {
 .businessCard__switch:checked + .businessCard__container .businessCard__back {
   transform: rotateX(0deg); }
 
-/* ==================================== */
-/* === BUSINESS CARD - MEDIA QUERIES=== */
-/* ==================================== */
-@media only screen and (max-width: 600px) {
-  .businessCard__container {
-    width: 360px;
-    font-size: 0.9em; } }
-@media only screen and (max-width: 360px) {
-  .businessCard__container {
-    width: 300px;
-    font-size: 0.9em; }
-
-  .businessCard__contactItem--notFirst {
-    padding: 0; }
-
-  .businessCard__flipIcon {
-    font-size: 1.2em; }
-
-  .businessCard__networkLogo {
-    width: 35px; } }
 .modalBackground {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
   background-color: gray;
+  height: 100vh;
+  left: 0;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  position: fixed;
+  top: 0;
   -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  width: 100vw;
+  z-index: 100; }
 
 .projectCarousel__container {
   display: none;
@@ -388,8 +385,8 @@ body {
   flex-grow: 1; }
 
 .projectCarousel__images {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -401,8 +398,8 @@ body {
 .projectCarousel__sliderRight, .projectCarousel__sliderLeft {
   width: 10%;
   height: 30vh;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -415,8 +412,8 @@ body {
 .projectCarousel__navArrow {
   width: 100%;
   cursor: pointer;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -439,7 +436,7 @@ body {
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
   -webkit-transition: width all 0.2s ease-out;
-  transition: width all 0.2s ease-out; }
+  transition: all 0.2s ease-out; }
 
 .projectCarousel__title {
   font-size: 1.5em;
@@ -456,8 +453,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background-color: red;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   height: 70vh;
   -webkit-box-pack: center;
@@ -489,8 +486,8 @@ body {
   cursor: pointer; }
 
 .skillChart {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -544,16 +541,16 @@ body {
 
 .skillsChart__barContainer {
   margin: -9px 10px;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-flow: column;
   flex-flow: column;
   position: relative; }
 
 .skillsChart__barsContainer {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -573,8 +570,8 @@ body {
   z-index: -1; }
 
 .skillCharts__container {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -607,8 +604,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 
 .skillsChart__yAxisProficiencyLabels {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -629,37 +626,54 @@ body {
   visibility: hidden; }
 
 .mobileNav {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  width: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  background-color: white;
   border-right: 2px solid black;
-  position: fixed;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 95vh;
   left: 0;
-  background-color: white;
-  display: -webkit-box;
+  overflow: hidden;
+  position: fixed;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 0; }
+  @media only screen and (min-width: 660px) {
+    .mobileNav {
+      display: none;
+      width: 0; } }
+
+.mobileNav__footer {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden;
-  display: inline-block; }
-  @media only screen and (min-width: 600px) {
-    .mobileNav {
-      display: none;
-      width: 0; } }
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 10px; }
 
-.mobileNav__name {
-  padding: 10px;
-  font-size: 1.2em;
-  font-family: 'Architects Daughter', cursive; }
+.mobileNav__footerText {
+  font-size: 0.7em;
+  -ms-flex-item-align: bottom;
+  -ms-grid-row-align: bottom;
+  align-self: flex-end; }
 
 .mobileNav__links {
   list-style: none;
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .mobileNav__link {
   padding: 10px; }
@@ -669,8 +683,13 @@ body {
 
 .mobileNav__link:hover > .mobileNav__label {
   color: blue;
-  font-weight: boldest;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bolder; }
+
+.mobileNav__name {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2em;
+  padding: 10px; }
 
 .mobileNav__search {
   padding: 10px; }
@@ -678,28 +697,6 @@ body {
 #mobileNav__searchInput {
   font-size: 1.1em;
   width: 100%; }
-
-.mobileNav__footer {
-  padding: 10px;
-  -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-
-.mobileNav__footerText {
-  font-size: 0.7em;
-  -ms-flex-item-align: bottom;
-  -ms-grid-row-align: bottom;
-  align-self: bottom; }
 
 .mobileNav__searchInput {
   border: 1px solid black; }
@@ -709,7 +706,8 @@ body {
   height: 0;
   margin: 5px 0;
   overflow: hidden;
-  padding: 3px; }
+  padding: 3px;
+  border: 1px solid black; }
 
 .mobileNav__projectsCarouselTab {
   margin: 10px 0; }
@@ -732,25 +730,18 @@ body {
   align-items: baseline;
   background-color: white;
   padding: 10px; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 660px) {
     .standardNav {
-      display: -webkit-box;
       display: -ms-flexbox;
+      display: -webkit-box;
       display: flex; } }
 
-.standardNav__name {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 1.6em; }
-
 .standardNav__links {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-flow: row;
-  flex-flow: row wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+  flex-flow: row wrap; }
 
 .standardNav__link {
   margin: 0 10px; }
@@ -765,11 +756,15 @@ body {
 .standardNav__searchIcon {
   cursor: pointer; }
 
+.standardNav__name {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.6em; }
+
 main {
   position: relative;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
-  @media only screen and (min-width: 600px) {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (min-width: 660px) {
     main {
       min-height: 80vh; } }
 
@@ -782,8 +777,8 @@ main > section {
   margin: 15px 0; }
 
 .projectsDisplay {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -792,37 +787,12 @@ main > section {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 660px) {
     .projectsDisplay {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; } }
-
-.projectsDisplay__tabs {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  width: 20%;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-  display: none; }
-  @media only screen and (min-width: 600px) {
-    .projectsDisplay__tabs {
-      display: block;
-      -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-      order: 0; } }
-
-.projectsDisplay__tab {
-  padding: 3px;
-  margin: 10px 0;
-  cursor: pointer;
-  width: 100%; }
-  .projectsDisplay__tab:hover {
-    background-color: black;
-    color: white; }
 
 .projectsDisplay__label {
   cursor: pointer;
@@ -830,20 +800,45 @@ main > section {
   width: 100%; }
 
 .projectsDisplay__projectsCarousel {
-  padding: 10px;
-  max-width: 800px;
-  margin: 0 auto;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px; }
+
+.projectsDisplay__tabs {
+  display: none;
+  list-style: none;
+  margin: 0;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 10px;
+  width: 20%; }
+  @media only screen and (min-width: 660px) {
+    .projectsDisplay__tabs {
+      display: block;
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; } }
+
+.projectsDisplay__tab {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 3px;
+  width: 100%; }
+  .projectsDisplay__tab:hover {
+    background-color: black;
+    color: white; }
 
 footer {
-  display: none;
-  text-align: center;
-  padding: 15px;
+  background-color: white;
   border-top: 3px solid black;
-  background-color: white; }
-  @media only screen and (min-width: 600px) {
+  display: none;
+  padding: 15px;
+  text-align: center; }
+  @media only screen and (min-width: 660px) {
     footer {
       display: block; } }
 
@@ -933,8 +928,8 @@ input[name="projectSwitches"]:nth-child(5):checked ~ .projectsDisplay .projectCa
   display: block; }
 
 .projectCarousel__switches {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -957,52 +952,52 @@ input[name|="projectCarousel__switch"]:nth-of-type(1):checked ~ .projectCarousel
 .projectCarousel
 input[name|="projectCarousel__switch"]:nth-of-type(2):checked ~ .projectCarousel__images .projectCarousel__sliderLeft .projectCarousel__navArrow:nth-of-type(1),
 input[name|="projectCarousel__switch"]:nth-of-type(3):checked ~ .projectCarousel__images .projectCarousel__sliderLeft .projectCarousel__navArrow:nth-of-type(2) {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex; }
 
 .projectCarousel input[name|="projectCarousel__switch"]:nth-of-type(1):checked ~ .projectCarousel__images .projectCarousel__sliderRight .projectCarousel__navArrow:nth-of-type(2),
 .projectCarousel input[name|="projectCarousel__switch"]:nth-of-type(2):checked ~ .projectCarousel__images .projectCarousel__sliderRight .projectCarousel__navArrow:nth-of-type(3),
 input[name|="projectCarousel__switch"]:nth-of-type(3):checked ~ .projectCarousel__images .projectCarousel__sliderRight .projectCarousel__navArrow:nth-of-type(1) {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex; }
 
 .projectCarousel
 input[name|="projectCarousel__switch"]:nth-of-type(1):checked ~ .projectCarousel__images img:nth-of-type(1) {
+  height: auto;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 0;
-  width: auto;
-  height: auto;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transition: all 0.8s;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+  width: auto;
+  z-index: 0; }
 
 .projectCarousel
 input[name|="projectCarousel__switch"]:nth-of-type(2):checked ~ .projectCarousel__images img:nth-of-type(2) {
+  height: auto;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 0;
-  width: auto;
-  height: auto;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transition: all 0.8s;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+  width: auto;
+  z-index: 0; }
 
 .projectCarousel
 input[name|="projectCarousel__switch"]:nth-of-type(3):checked ~ .projectCarousel__images img:nth-of-type(3) {
+  height: auto;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 0;
-  width: auto;
-  height: auto;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transition: all 0.8s;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+  width: auto;
+  z-index: 0; }
 
 input[name|="projectCarousel__switch"]:nth-of-type(1):checked ~ .projectCarousel__switches label:nth-of-type(1) {
   background-color: gray;
@@ -1029,11 +1024,11 @@ label[for="searchModalToggle"] {
   transition: all 1s ease-in-out; }
 
 #searchModalToggle:checked ~ .modalBackground {
-  z-index: -50;
   opacity: 0;
+  transition: all 1s ease-in-out;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  z-index: -50; }
 
 input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav__links > li:nth-child(2) .mobileNav__projectsCarouselTabs {
   height: 100%;
@@ -1044,16 +1039,15 @@ input[name="sectionSwitches"]:nth-child(2):checked ~ nav .mobileNav__links > li:
   display: none; }
 
 label[for="toggleNav"] {
-  display: block;
-  width: 100%;
   background-color: white;
-  padding: 5px;
   cursor: pointer;
-  width: 100vw; }
+  display: block;
+  padding: 5px;
+  width: 100%; }
   @media only screen and (min-width: 600px) {
     label[for="toggleNav"] {
       display: none;
-      width: none; } }
+      width: 0; } }
 
 #toggleNav:checked ~ main label[for="toggleNav"] #enterNav {
   display: none; }
@@ -1065,22 +1059,24 @@ label[for="toggleNav"] {
   position: relative;
   -webkit-transform: translateX(40vw);
   transform: translateX(40vw);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   @media only screen and (min-width: 600px) {
     #toggleNav:checked ~ main {
       -webkit-transform: translateX(0);
       transform: translateX(0); } }
 
 #toggleNav:checked ~ .mobileNav {
-  width: 40vw;
-  opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 40vw;
   z-index: inherit; }
 
 #toggleNav:not(:checked) ~ .mobileNav {
-  width: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 0; }
 
 /*# sourceMappingURL=main.css.map */

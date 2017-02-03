@@ -25,14 +25,13 @@
 <input type="radio" name="sectionSwitches" id="skillsSwitch"  />
 <input type="radio" name="sectionSwitches" id="contactSwitch" />
 
-<!-- MODAL TOGGLE SWITCH -->
-<input type="checkbox" id="searchModalToggle" checked/>
+
+
+
 
 <!-- =========== -->
-<!-- TOP NAV BAR -->
+<!-- STANDARD NAV BAR -->
 <!-- =========== -->
-<input type="checkbox" name="toggleNav" id="toggleNav" />
-
 <nav class="standardNav">
   <div class="standardNav__name">btmbtm</div>
 
@@ -53,6 +52,9 @@
 <!-- ============== -->
 <!-- MOBILE NAV BAR -->
 <!-- ============== -->
+
+<!-- MOBILE NAV SWITCH -->
+<input type="checkbox" name="toggleNav" id="toggleNav" />
 
 <nav class="mobileNav">
   <div class="mobileNav__name">btmbtm</div>
@@ -77,7 +79,6 @@
     <label for="searchModalToggle">
       <i class="fa fa-search" aria-hidden="true"> </i>
     </label>
-
   </div>
   <footer class="mobileNav__footer">
     <div class="mobileNav__footerText">
@@ -92,10 +93,13 @@
 <!-- ============= -->
 
 <main>
+
+  <!-- MOBILE NAV TOGGLE ICONS -->
   <label for="toggleNav">
     <i id="enterNav" class="fa fa-bars fa-2x" aria-hidden="true"></i>
     <i id="exitNav" class="fa fa-times fa-2x" aria-hidden="true"></i>
   </label>
+
   <!-- ============= -->
   <!-- ABOUT SECTION -->
   <!-- ============= -->
@@ -121,8 +125,8 @@
   <!-- PROJECT SECTION -->
   <!-- =============== -->
 
-
   <section id="Projects">
+
     <!-- PROJECT SWITCHES -->
     <input type="radio" name="projectSwitches" id="calcProjectSwitch" checked/>
     <input type="radio" name="projectSwitches" id="nonJSUIComponentsSwitch" />
@@ -133,6 +137,7 @@
     <h1 class="section__title">Projects</h1>
     <div class="projectsDisplay">
 
+      <!-- PROJECT DISPLAY TABS -->
       <ul class="projectsDisplay__tabs">
         <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="calcProjectSwitch">Real Calculator</label></li>
         <li class="projectsDisplay__tab"><label class="projectsDisplay__label" for="nonJSUIComponentsSwitch">UI Componenets</label></li>
@@ -441,6 +446,7 @@
     <h1 class="section__title">Skills</h1>
     <div class="skillCharts__container">
 
+      <!-- FRONT END DEV SKILL CHART -->
       <div class="skillChart_container">
 
         <div class="skillChart__title">Front End Dev</div>
@@ -480,6 +486,9 @@
           </div>
         </div>
       </div>
+      <!-- END FRONT END DEV SKILL CHART -->
+
+      <!-- BACK END DEV SKILL CHART -->
       <div class="skillChart_container">
         <div class="skillChart__title">Back End Dev</div>
         <div class="skillChart">
@@ -517,6 +526,9 @@
           </div>
         </div>
       </div>
+      <!-- END BACK END DEV SKILL CHART -->
+
+      <!-- OTHER SKILLS SKILL CHART -->
       <div class="skillChart_container">
         <div class="skillChart__title">Other Skills</div>
         <div class="skillChart">
@@ -570,6 +582,7 @@
           </div>
         </div>
       </div>
+      <!-- END OTHER SKILLS SKILL CHART -->
     </div>
   </section>
 
@@ -579,6 +592,7 @@
 
   <section id="contact">
     <h1 class="section__title">Contact</h1>
+    <!-- BUINESS CARD -->
     <input id="businessCard__switch-1" class="businessCard__switch" type="checkbox" />
     <div class="businessCard__container">
       <div class="businessCard">
@@ -619,6 +633,7 @@
         </div>
       </div>
     </div>
+    <!-- END BUSINESS CARD -->
   </section>
 </main>
 
@@ -634,6 +649,10 @@
 <!-- SEARCH MODAL -->
 <!-- ============ -->
 
+<!-- SEARCH MODAL TOGGLE SWITCH -->
+<input type="checkbox" id="searchModalToggle" checked/>
+
+<!-- SEARCH MODAL -->
 <div class="searchModal">
   <label class="searchModal__exitButton" for="searchModalToggle">
     <i id="exitModal" class="fa fa-times fa-2x" aria-hidden="true"></i>
@@ -643,6 +662,7 @@
   </div>
 </div>
 
+<!-- MODAL BACKGROUND -->
 <div class="modalBackground"></div>
 
 </body>

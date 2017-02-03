@@ -57,6 +57,9 @@
 
 .businessCard__contactItem--notFirst{
   padding-left: 10px;
+  @media only screen and (max-width: $breakpointSmall) {
+    padding: 0;
+  }
 }
 
 .businessCard__container{
@@ -67,6 +70,15 @@
   position: relative;
   width: 500px;
     font-size: 16px;
+
+  @media only screen and (max-width: $breakpointMed) {
+    width: 360px;
+    font-size: 0.9em;
+  }
+  @media only screen and (max-width: $breakpointSmall) {
+    width: 300px;
+    font-size: 0.9em;
+  }
 }
 
 .businessCard__currentPosition{
@@ -85,6 +97,11 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  @media only screen and (max-width: $breakpointSmall) {
+    font-size: 1.2em;
+  }
+
+
 }
 
 .businessCard__front{
@@ -104,7 +121,7 @@
 }
 
 .businessCard__networkLinks{
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: normal;
 }
 
@@ -122,6 +139,9 @@
 
 .businessCard__networkLogo{
   width: 50px;
+  @media only screen and (max-width: $breakpointSmall) {
+    width: 35px;
+  }
 }
 
 .businessCard__networkLogo--main{
@@ -151,37 +171,4 @@
     transform: rotateX(0deg);
 }
 
-/* ==================================== */
-/* === BUSINESS CARD - MEDIA QUERIES=== */
-/* ==================================== */
 
-@media only screen and (max-width: 600px) {
-  
-  .businessCard__container{
-    width: 360px;
-    font-size: 0.9em;
-  }
- 
-}
-
-@media only screen and (max-width: 360px) {
-
-  
-  .businessCard__container{
-    width: 300px;
-    font-size: 0.9em;
-  }
-  
-  .businessCard__contactItem--notFirst{
-    padding: 0;
-  }
-  
-  .businessCard__flipIcon{
-    font-size: 1.2em;
-  }
-  
-  .businessCard__networkLogo{
-  width: 35px;
-  }
-    
-}

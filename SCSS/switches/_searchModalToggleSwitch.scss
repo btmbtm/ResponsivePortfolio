@@ -7,6 +7,7 @@ label[for="searchModalToggle"]{
   cursor: pointer;
 }
 
+// CLOSE SEARCH MODAL WHEN SEARCH TOGGLE IS CLICKED
 #searchModalToggle:checked ~ .searchModal{
   height: 0;
   top: -300px;
@@ -14,10 +15,11 @@ label[for="searchModalToggle"]{
   transition: all 1s ease-in-out; 
 }
 
+// BRING UP MODAL BACKGROUND WHEN SEARCH TOGGLE IS CLICKED
 #searchModalToggle:checked ~ .modalBackground{
-  z-index: -50;
   opacity: 0;
+  transition: all 1s ease-in-out; 
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
+  z-index: -50;
 }

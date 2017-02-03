@@ -2,7 +2,7 @@ input[name="sectionSwitches"]{
   display: none;
 }
 
-// HIGHLIGHT SELECTED SECTION NAME LINK IN NAV 
+// HIGHLIGHT OPEN SECTION NAME LINK IN NAV 
 @for $i from 1 through 4 {
 input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .standardNav .standardNav__links > .standardNav__link:nth-child(#{$i}) .standardNav__label
   {
@@ -11,7 +11,7 @@ input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .standardNav .standardN
   }
 }
 
-// HIGHLIGHT SELECTED SECTION NAME IN MOBILE NAV
+// HIGHLIGHT OPEN SECTION NAME IN MOBILE NAV
 @for $i from 1 through 4 {
 input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .mobileNav .mobileNav__links > .mobileNav__link:nth-child(#{$i}) .mobileNav__label {
     color: red; 
@@ -19,7 +19,7 @@ input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ .mobileNav .mobileNav__
   }
 }
 
-// DISPLAY SECTION WHEN CLICKED
+// DISPLAY SECTION WHEN NAV ITEM CLICKED
 @for $i from 1 through 4 {
   input[name="sectionSwitches"]:nth-child(#{$i}):checked ~ main section:nth-of-type(#{$i}){
     display: block;

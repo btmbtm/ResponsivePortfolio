@@ -1,4 +1,3 @@
-
 .standardNav{
   display: none;
 
@@ -19,25 +18,17 @@
   background-color: white;
   padding: 10px;  
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpointMed) {
     @include flexBox;
   }
 }
 
-.standardNav__name{
-  font-family: 'Architects Daughter', cursive;
-  font-size: 1.6em;
-}
+
 
 .standardNav__links{
   @include flexBox;
-
   -ms-flex-flow: row ;
       flex-flow: row wrap;
-  // clear 
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .standardNav__link{
@@ -57,3 +48,7 @@
   cursor: pointer;
 }
 
+.standardNav__name{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.6em;
+}

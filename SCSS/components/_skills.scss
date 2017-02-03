@@ -22,7 +22,7 @@
   z-index: 5;
 }
 
-
+// SKILL BAR PROFICIENCY MODIFIER -- AFFECTS HEIGHT OF BAR
 .skillsChart__bar--expert{
   height: 40vh;
   max-height: 180px;
@@ -48,6 +48,7 @@
   max-height: 55px;
 }
 
+// SKILL BAR COLOR MODIFIER -- AFFECTS COLOR OF BAR (NOT SEMANTIC)
 .skillsChart__bar--orange{
   background-color: #FFAD41;
 }
