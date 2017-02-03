@@ -640,8 +640,8 @@ body {
   left: 0;
   overflow: hidden;
   position: fixed;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 0; }
   @media only screen and (min-width: 660px) {
     .mobileNav {
@@ -1059,8 +1059,8 @@ label[for="toggleNav"] {
   position: relative;
   -webkit-transform: translateX(40vw);
   transform: translateX(40vw);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   @media only screen and (min-width: 600px) {
     #toggleNav:checked ~ main {
       -webkit-transform: translateX(0);
@@ -1069,14 +1069,14 @@ label[for="toggleNav"] {
 #toggleNav:checked ~ .mobileNav {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 40vw;
   z-index: inherit; }
 
 #toggleNav:not(:checked) ~ .mobileNav {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 0; }
 
 /*# sourceMappingURL=main.css.map */
