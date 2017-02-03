@@ -127,26 +127,26 @@ table {
   -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-animation-duration: 0.9s; }
 
-#bar5, .skillsChart_bar-expert, .skillsChart_bar-proficient {
+#bar5, .skillsChart__bar-expert, .skillsChart__bar--proficient {
   -webkit-animation-name: liftBars;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.9s; }
 
-#bar4, #bar6, #bar9, .skillsChart_bar-competent {
+#bar4, #bar6, #bar9, .skillsChart__bar--competent {
   -webkit-animation-name: liftBars;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.7s; }
 
-.skillsChart_bar-learning {
+.skillsChart__bar--learning {
   position: relative;
   -webkit-animation-name: liftBars;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.8s; }
 
-.skillsChart_bar-expert {
+.skillsChart__bar--expert {
   -webkit-animation-name: liftBars;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -158,7 +158,7 @@ table {
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-animation-duration: 0.7s; }
 
-.projects_carousel_tabs li:nth-child(2n), .about_bars_intro {
+.projects_carousel_tabs li:nth-child(2n), .introBars__intro {
   -webkit-animation-name: swingInItems;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -230,6 +230,9 @@ body {
   transition: all 1s ease;
   width: 100%; }
 
+.businessCard__bio {
+  margin: 20px 0; }
+
 .businessCard__back {
   background-color: black;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/433464/DSCN7219.jpg");
@@ -264,7 +267,7 @@ body {
 
 .businessCard__contactList {
   list-style: none;
-  margin: 0;
+  margin: 5px 0;
   padding: 0; }
 
 .businessCard__contactItem--notFirst {
@@ -299,6 +302,9 @@ body {
   color: white;
   position: relative;
   transform: rotateX(0deg); }
+
+.businessCard__header {
+  margin-bottom: 10px; }
 
 .businessCard__name {
   font-size: 35px;
@@ -502,71 +508,42 @@ body {
   -webkit-transition: width all 0.2s ease-out;
   transition: width all 0.2s ease-out; }
 
-#SearchModal {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  position: fixed;
-  z-index: 100;
-  width: 30%;
-  left: calc(4%);
-  top: 100px;
-  padding: 2%;
-  background-color: red;
-  width: 90vw;
-  height: 70vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.searchModal {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 1s ease-in-out;
+  left: calc(4%);
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  padding: 2%;
+  position: fixed;
+  text-align: center;
   transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  top: 100px;
+  width: 30%;
+  width: 90vw;
   z-index: 105; }
 
-.searchModal_result {
+.searchModal__result {
   position: relative;
   text-align: center;
   width: 100%;
   height: 100%; }
 
-.searchModal_exitButton {
+.searchModal__exitButton {
   position: absolute;
   right: 5px;
   top: 5px;
   cursor: pointer; }
-
-#searchModalToggle {
-  display: none; }
-
-label[for="searchModalToggle"] {
-  cursor: pointer; }
-
-#searchModalToggle:checked ~ #SearchModal {
-  height: 0;
-  top: -300px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
-
-#searchModalToggle:checked ~ div.modalBackground {
-  z-index: -50;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
-
-.skillCharts_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
 
 .skillChart {
   display: -webkit-box;
@@ -578,33 +555,60 @@ label[for="searchModalToggle"] {
   flex-direction: row;
   margin: 4vh 3vh 15vh 0vh; }
 
-.skillChart_title {
-  margin: 20px;
-  text-align: center; }
+.skillsChart__bar {
+  width: 25px;
+  cursor: pointer; }
 
-.skillsChart_proficiencyLevel {
+.skillsChart__barContainer:hover .skillsChart_toolTipCont > .skillsChart_toolTip {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: 5; }
+
+.skillsChart__bar--expert {
+  height: 40vh;
+  max-height: 180px; }
+
+.skillsChart__bar--proficient {
+  height: 30vh;
+  max-height: 138.75px; }
+
+.skillsChart__bar--learning {
+  position: relative;
+  height: 0vh; }
+
+.skillsChart__bar--competent {
+  height: 20vh;
+  max-height: 95px; }
+
+.skillsChart__bar--learning {
+  height: 14vh;
+  max-height: 55px; }
+
+.skillsChart__bar--orange {
+  background-color: #FFAD41; }
+
+.skillsChart__bar--aqua {
+  background-color: #38BAF0; }
+
+.skillsChart__bar--green {
+  background-color: #69D12B; }
+
+.skillsChart__bar--pink {
+  background-color: #FA8CB0; }
+
+.skillsChart__bar--yellow {
+  background-color: #EFE210; }
+
+.skillsChart__barContainer {
+  margin: -9px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-size: 0.9em;
-  border-bottom: 2px solid black; }
+  -ms-flex-flow: column;
+  flex-flow: column;
+  position: relative; }
 
-.skillsChart_proficiencyLevel_level {
-  position: relative;
-  top: -5px;
-  font-size: 0.8em; }
-
-.skillsChart_proficiencyLevel_level-hidden {
-  visibility: hidden; }
-
-.skillsChart_barsContainer {
+.skillsChart__barsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,16 +619,7 @@ label[for="searchModalToggle"] {
   max-height: 185px;
   border-bottom: 2px solid black; }
 
-.skillsChart_barContainer {
-  margin: -9px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  position: relative; }
-
-.skillsChart_barLabel {
+.skillsChart__barLabel {
   height: 0;
   width: 0;
   text-align: center;
@@ -634,21 +629,25 @@ label[for="searchModalToggle"] {
   font-size: 0.8em;
   z-index: -1; }
 
-.skillsChart_bar {
-  width: 25px;
-  cursor: pointer; }
+.skillCharts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
-.skillsChart_barContainer:hover .skillsChart_bar_toolTipCont > .skillsChart_bar_toolTip {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 5; }
+.skillChart__title {
+  margin: 20px;
+  text-align: center; }
 
-.skillsChart_bar_toolTipCont {
+.skillsChart_toolTipCont {
   height: 0;
   width: 0;
   position: relative; }
 
-.skillsChart_bar_toolTip {
+.skillsChart_toolTip {
   position: absolute;
   top: -35px;
   left: -110px;
@@ -664,40 +663,27 @@ label[for="searchModalToggle"] {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 
-.skillsChart_bar-expert {
-  height: 40vh;
-  max-height: 180px; }
+.skillsChart__yAxisProficiencyLabels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0.9em;
+  border-bottom: 2px solid black; }
 
-.skillsChart_bar-proficient {
-  height: 30vh;
-  max-height: 138.75px; }
-
-.skillsChart_bar-learning {
+.skillsChart__yAxisProficiencyLabel {
   position: relative;
-  height: 0vh; }
+  top: -5px;
+  font-size: 0.8em; }
 
-.skillsChart_bar-competent {
-  height: 20vh;
-  max-height: 95px; }
-
-.skillsChart_bar-learning {
-  height: 14vh;
-  max-height: 55px; }
-
-.skillsChart_bar-orange {
-  background-color: #FFAD41; }
-
-.skillsChart_bar-aqua {
-  background-color: #38BAF0; }
-
-.skillsChart_bar-green {
-  background-color: #69D12B; }
-
-.skillsChart_bar-pink {
-  background-color: #FA8CB0; }
-
-.skillsChart_bar-yellow {
-  background-color: #EFE210; }
+.skillsChart__yAxisProficiencyLabel--hidden {
+  visibility: hidden; }
 
 .mobileNav {
   -webkit-transition: all 1s ease-in-out;
@@ -900,14 +886,8 @@ main > section {
   padding: 10px 5px; }
 
 .section__title {
-  font-size: 2em; }
-
-main > section {
-  display: none;
-  padding: 10px 5px; }
-
-.section__title {
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 15px 0; }
 
 footer {
   display: none;
@@ -922,19 +902,19 @@ footer {
 input[name="sectionSwitches"] {
   display: none; }
 
-input[name="sectionSwitches"]:nth-child(1):checked ~ .standardNav .nav_links li:nth-child(1) label {
+input[name="sectionSwitches"]:nth-child(1):checked ~ .standardNav .nav__links > .nav__link:nth-child(1) .nav__label {
   color: red;
   font-weight: bold; }
 
-input[name="sectionSwitches"]:nth-child(2):checked ~ .standardNav .nav_links li:nth-child(2) label {
+input[name="sectionSwitches"]:nth-child(2):checked ~ .standardNav .nav__links > .nav__link:nth-child(2) .nav__label {
   color: red;
   font-weight: bold; }
 
-input[name="sectionSwitches"]:nth-child(3):checked ~ .standardNav .nav_links li:nth-child(3) label {
+input[name="sectionSwitches"]:nth-child(3):checked ~ .standardNav .nav__links > .nav__link:nth-child(3) .nav__label {
   color: red;
   font-weight: bold; }
 
-input[name="sectionSwitches"]:nth-child(4):checked ~ .standardNav .nav_links li:nth-child(4) label {
+input[name="sectionSwitches"]:nth-child(4):checked ~ .standardNav .nav__links > .nav__link:nth-child(4) .nav__label {
   color: red;
   font-weight: bold; }
 
@@ -1079,5 +1059,24 @@ input[name|="project_carousel_switch"]:nth-of-type(2):checked ~ .project_carouse
 input[name|="project_carousel_switch"]:nth-of-type(3):checked ~ .project_carousel_switch_container label:nth-of-type(3) {
   background-color: gray;
   color: white; }
+
+#searchModalToggle {
+  display: none; }
+
+label[for="searchModalToggle"] {
+  cursor: pointer; }
+
+#searchModalToggle:checked ~ .searchModal {
+  height: 0;
+  top: -300px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+#searchModalToggle:checked ~ .modalBackground {
+  z-index: -50;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */

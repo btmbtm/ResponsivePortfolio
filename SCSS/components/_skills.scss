@@ -1,14 +1,5 @@
 //add proficiency bar colors vars
 
-.skillCharts_container{
-  @include flexBox;
-
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .skillChart{
   @include flexBox;
 
@@ -20,38 +11,70 @@
   margin: 4vh 3vh 15vh 0vh;
 }
 
-.skillChart_title{
-  margin: 20px;
-  text-align: center;
+.skillsChart__bar{
+  width: 25px;
+  cursor: pointer;
 }
 
-.skillsChart_proficiencyLevel{
-  @include flexBox;
-
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-
-  font-size: 0.9em;
-  border-bottom: 2px solid black;
+.skillsChart__barContainer:hover .skillsChart_toolTipCont > .skillsChart_toolTip{
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  z-index: 5;
 }
 
-.skillsChart_proficiencyLevel_level{
+
+.skillsChart__bar--expert{
+  height: 40vh;
+  max-height: 180px;
+}
+
+.skillsChart__bar--proficient{
+  height: 30vh;
+  max-height: 138.75px;
+}
+
+.skillsChart__bar--learning{
   position: relative;
-  top: -5px;
-  font-size: 0.8em;
+  height: 0vh;
 }
 
-.skillsChart_proficiencyLevel_level-hidden{
-  visibility:hidden;
+.skillsChart__bar--competent{
+  height: 20vh;
+  max-height: 95px;
 }
 
-.skillsChart_barsContainer{
+.skillsChart__bar--learning{
+  height: 14vh;
+  max-height: 55px;
+}
+
+.skillsChart__bar--orange{
+  background-color: #FFAD41;
+}
+
+.skillsChart__bar--aqua{
+  background-color: #38BAF0;
+}
+
+.skillsChart__bar--green{
+  background-color: #69D12B;
+}
+.skillsChart__bar--pink{
+  background-color: #FA8CB0;
+}
+.skillsChart__bar--yellow{
+  background-color: #EFE210;
+}
+
+.skillsChart__barContainer{
+  margin: -9px 10px;
+  @include flexBox;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  position: relative;
+}
+
+.skillsChart__barsContainer{
   @include flexBox;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -61,15 +84,7 @@
   border-bottom: 2px solid black;
 }
 
-.skillsChart_barContainer{
-  margin: -9px 10px;
-  @include flexBox;
-  -ms-flex-flow: column;
-      flex-flow: column;
-  position: relative;
-}
-
-.skillsChart_barLabel{
+.skillsChart__barLabel{
   height: 0;
   width: 0;
   text-align: center;
@@ -80,24 +95,29 @@
   z-index: -1;
 }
 
-.skillsChart_bar{
-  width: 25px;
-  cursor: pointer;
+.skillCharts__container{
+  @include flexBox;
+
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.skillsChart_barContainer:hover .skillsChart_bar_toolTipCont > .skillsChart_bar_toolTip{
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  z-index: 5;
+
+.skillChart__title{
+  margin: 20px;
+  text-align: center;
 }
 
-.skillsChart_bar_toolTipCont{
+
+.skillsChart_toolTipCont{
   height: 0;
   width: 0;
   position: relative;
 }
 
-.skillsChart_bar_toolTip{
+.skillsChart_toolTip{
   position: absolute;
   top: -35px;
   left: -110px;
@@ -116,45 +136,29 @@
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
-.skillsChart_bar-expert{
-  height: 40vh;
-  max-height: 180px;
+
+.skillsChart__yAxisProficiencyLabels{
+  @include flexBox;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  font-size: 0.9em;
+  border-bottom: 2px solid black;
 }
 
-.skillsChart_bar-proficient{
-  height: 30vh;
-  max-height: 138.75px;
-}
-
-.skillsChart_bar-learning{
+.skillsChart__yAxisProficiencyLabel{
   position: relative;
-  height: 0vh;
+  top: -5px;
+  font-size: 0.8em;
 }
 
-.skillsChart_bar-competent{
-  height: 20vh;
-  max-height: 95px;
-}
-
-.skillsChart_bar-learning{
-  height: 14vh;
-  max-height: 55px;
-}
-
-.skillsChart_bar-orange{
-  background-color: #FFAD41;
-}
-
-.skillsChart_bar-aqua{
-  background-color: #38BAF0;
-}
-
-.skillsChart_bar-green{
-  background-color: #69D12B;
-}
-.skillsChart_bar-pink{
-  background-color: #FA8CB0;
-}
-.skillsChart_bar-yellow{
-  background-color: #EFE210;
+.skillsChart__yAxisProficiencyLabel--hidden{
+  visibility:hidden;
 }

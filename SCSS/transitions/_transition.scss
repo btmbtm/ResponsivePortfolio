@@ -8,20 +8,20 @@
   @include transition(liftBars, 1, $easeA, 0.9s);
 }
 
-#bar5, .skillsChart_bar-expert, .skillsChart_bar-proficient {
+#bar5, .skillsChart__bar-expert, .skillsChart__bar--proficient {
   @include transition(liftBars, 1, $easeB, 0.9s);
 }
 
-#bar4, #bar6, #bar9, .skillsChart_bar-competent{
+#bar4, #bar6, #bar9, .skillsChart__bar--competent{
   @include transition(liftBars, 1, $easeB, 0.7s);
 }
 
-.skillsChart_bar-learning{
+.skillsChart__bar--learning{
   position: relative;
   @include transition(liftBars, 1, $easeB, 0.8s);
 }
 
-.skillsChart_bar-expert{
+.skillsChart__bar--expert{
   @include transition(liftBars, 1, $easeB, 1.1s);
 }
 
@@ -31,7 +31,7 @@
 
 }
 
-.projects_carousel_tabs li:nth-child(2n), .about_bars_intro {
+.projects_carousel_tabs li:nth-child(2n), .introBars__intro {
   @include transition(swingInItems, 1, $easeB, 1.1s);
 }
 
