@@ -4,12 +4,13 @@ checkIfVisited();
 
 function checkIfVisited(){
   var COOKIES = getCookieValues();
-  console.log(COOKIES['visited']);
   if('visited' in COOKIES){
-  	welcomeMessage.textContent = "Welcome back!"
+    welcomeMessage.textContent = "Welcome back!"
   } else {
-  	welcomeMessage.textContent = "Thanks for coming! Have a look around."
-  	document.cookie ="visited=true";
+    var yearFromNow = new Date();
+    yearFromNow.setFullYear(yearFromNow.getFullYear() + 1)
+    welcomeMessage.textContent = "Thanks for coming! Have a look around."
+    document.cookie ="visited=true;expires="+yearFromNow.toUTCString();
   }
 }
 
