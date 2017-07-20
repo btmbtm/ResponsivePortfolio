@@ -636,44 +636,6 @@ body {
 .skillsChart__yAxisProficiencyLabel--hidden {
   visibility: hidden; }
 
-.sideBar {
-  width: 20%;
-  max-width: 400px;
-  position: fixed;
-  right: 10px;
-  top: 50px;
-  border: 5px solid DarkTurquoise;
-  border-radius: 2%;
-  font-family: 'Josefin Slab', serif;
-  background-color: LightCyan;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  display: none; }
-
-.sideBar__name {
-  font-size: 35px;
-  color: darkturquoise;
-  margin: 15px 0; }
-
-.sideBar__aboutHeader {
-  font-size: 25px;
-  color: blue;
-  margin: 10px 0; }
-
-.sideBar__content p {
-  margin: 15px 0;
-  font-size: 18px; }
-
-.sideBar__linkback {
-  color: Crimson;
-  text-decoration: none; }
-
-.sideBar__profileImage {
-  border: 2px solid DarkTurquoise;
-  border-radius: 10px; }
-
 .mobileNav {
   display: -ms-flexbox;
   display: -webkit-box;
