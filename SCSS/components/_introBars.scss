@@ -26,6 +26,20 @@
 
 }
 
+.introBars__welcome{
+  background-color: black;
+  color: snow;
+  position: absolute;
+  top: 70vh;
+  width: 95vw;
+  z-index: 5;
+
+  @media only screen and (min-width: 600px) {
+    width: 50vw;
+  }
+
+}
+
 .introBars__bar{
   background-color: black;
   margin: 10px 10px;
