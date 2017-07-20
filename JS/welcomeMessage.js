@@ -1,5 +1,6 @@
 var D = document;
-var welcomeMessage = D.querySelector('.introBars__welcome')
+var welcomeMessage = D.querySelector('.introBars__welcome');
+console.log(welcomeMessage);
 checkIfVisited();
 
 function checkIfVisited(){
