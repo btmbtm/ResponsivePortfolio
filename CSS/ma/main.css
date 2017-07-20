@@ -217,17 +217,6 @@ body {
     .introBars__intro {
       width: 50vw; } }
 
-.introBars__welcome {
-  background-color: black;
-  color: snow;
-  position: absolute;
-  top: 70vh;
-  width: 95vw;
-  z-index: 5; }
-  @media only screen and (min-width: 600px) {
-    .introBars__welcome {
-      width: 50vw; } }
-
 .introBars__bar {
   background-color: black;
   margin: 10px 10px;
@@ -638,7 +627,7 @@ body {
 
 .sideBar {
   width: 20%;
-  max-width: 400px;
+  max-width: 200px;
   position: fixed;
   right: 10px;
   top: 50px;
@@ -648,31 +637,21 @@ body {
   background-color: LightCyan;
   margin-top: 5%;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  display: none; }
+  flex-direction: column; }
 
-.sideBar__name {
-  font-size: 35px;
-  color: darkturquoise;
-  margin: 15px 0; }
-
-.sideBar__aboutHeader {
-  font-size: 25px;
-  color: blue;
-  margin: 10px 0; }
-
-.sideBar__content p {
-  margin: 15px 0;
-  font-size: 18px; }
+.sideBar h1, h2, h3, h4 {
+  color: DarkTurquoise; }
 
 .sideBar__linkback {
   color: Crimson;
   text-decoration: none; }
 
+.sideBar__content {
+  padding: 10%; }
+
 .sideBar__profileImage {
   border: 2px solid DarkTurquoise;
-  border-radius: 10px; }
+  border-radius: 5%; }
 
 .mobileNav {
   display: -ms-flexbox;
